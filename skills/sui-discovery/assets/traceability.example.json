@@ -1,0 +1,108 @@
+{
+  "requiredKinds": [
+    "architecture",
+    "design",
+    "code",
+    "unit",
+    "functional",
+    "system",
+    "acceptance"
+  ],
+  "artifacts": [
+    {
+      "id": "R1",
+      "kind": "requirement",
+      "locator": "requirements#restore",
+      "owner": "product"
+    },
+    {
+      "id": "A1",
+      "kind": "architecture",
+      "locator": "architecture#storage",
+      "owner": "engineering"
+    },
+    {
+      "id": "D1",
+      "kind": "design",
+      "locator": "design#atomic-save",
+      "owner": "engineering"
+    },
+    {
+      "id": "C1",
+      "kind": "code",
+      "locator": "draft.py",
+      "owner": "engineering"
+    },
+    {
+      "id": "UT1",
+      "kind": "unit",
+      "locator": "test_draft.py::test_atomic",
+      "owner": "engineering"
+    },
+    {
+      "id": "FT1",
+      "kind": "functional",
+      "locator": "tests/restore.feature",
+      "owner": "engineering"
+    },
+    {
+      "id": "ST1",
+      "kind": "system",
+      "locator": "system-test#restart",
+      "owner": "engineering"
+    },
+    {
+      "id": "AT1",
+      "kind": "acceptance",
+      "locator": "acceptance#reopen",
+      "owner": "engineering"
+    }
+  ],
+  "links": [
+    [
+      "R1",
+      "A1"
+    ],
+    [
+      "A1",
+      "D1"
+    ],
+    [
+      "D1",
+      "C1"
+    ],
+    [
+      "C1",
+      "UT1"
+    ],
+    [
+      "C1",
+      "FT1"
+    ],
+    [
+      "C1",
+      "ST1"
+    ],
+    [
+      "C1",
+      "AT1"
+    ]
+  ],
+  "changes": [
+    {
+      "id": "CR1",
+      "baseline": "draft-v1",
+      "requester": "support",
+      "rationale": "crash loses acknowledged content",
+      "alternatives": "manual backup; atomic persistence",
+      "impact": "R1 and persistence tests",
+      "decisionOwner": "product",
+      "targetRelease": "v2",
+      "status": "proposed",
+      "affected": [
+        "R1",
+        "C1"
+      ]
+    }
+  ]
+}

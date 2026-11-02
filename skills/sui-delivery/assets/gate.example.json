@@ -1,0 +1,16 @@
+{
+  "checks": [
+    {
+      "id": "unit",
+      "argv": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover"
+      ],
+      "cwd": ".",
+      "timeoutSeconds": 120,
+      "required": true
+    }
+  ]
+}

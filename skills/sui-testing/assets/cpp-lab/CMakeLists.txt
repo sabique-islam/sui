@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.20)
+project(sui_frame_lab LANGUAGES CXX)
+find_package(GTest CONFIG REQUIRED)
+add_executable(frame_test frame_test.cpp)
+target_compile_features(frame_test PRIVATE cxx_std_17)
+target_link_libraries(frame_test PRIVATE GTest::gtest_main)
+include(GoogleTest)
+gtest_discover_tests(frame_test)

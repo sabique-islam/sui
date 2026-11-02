@@ -1,0 +1,14 @@
+interface:
+  display_name: Sui Debugging
+  short_description: Reproduce failures and verify causal fixes
+  default_prompt: Use $sui-debugging to complete this task with project-specific evidence
+    and proportionate verification.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

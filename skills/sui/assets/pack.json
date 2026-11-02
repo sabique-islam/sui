@@ -1,0 +1,252 @@
+{
+  "name": "sui",
+  "version": "1.2.0",
+  "skills": [
+    "sui",
+    "sui-discovery",
+    "sui-architecture",
+    "sui-implementation",
+    "sui-review",
+    "sui-testing",
+    "sui-debugging",
+    "sui-delivery",
+    "sui-reliability",
+    "sui-security",
+    "sui-ai-systems",
+    "sui-evidence",
+    "sui-maintenance"
+  ],
+  "sourceCount": 68,
+  "routing": [
+    {
+      "name": "sui-discovery",
+      "intent": "Define the smallest useful outcome and its acceptance evidence, then progress toward it."
+    },
+    {
+      "name": "sui-architecture",
+      "intent": "Choose an architecture that meets actual constraints and remains understandable to its owners."
+    },
+    {
+      "name": "sui-implementation",
+      "intent": "Deliver the requested behavior as a small reviewable change with evidence that it works."
+    },
+    {
+      "name": "sui-review",
+      "intent": "Find defects worth fixing and explain a reachable failure with a precise code location."
+    },
+    {
+      "name": "sui-testing",
+      "intent": "Create trustworthy evidence about behavior and expose important failure modes with the smallest useful suite."
+    },
+    {
+      "name": "sui-debugging",
+      "intent": "Identify the causal failure and prove that the fix addresses it without broadening the problem."
+    },
+    {
+      "name": "sui-delivery",
+      "intent": "Make the requested change deployable with clear evidence and a recovery path."
+    },
+    {
+      "name": "sui-reliability",
+      "intent": "Protect the user-visible outcome using useful measurements, bounded failure and recovery."
+    },
+    {
+      "name": "sui-security",
+      "intent": "Reduce a concrete attack or privacy risk and verify the control at its enforcement boundary."
+    },
+    {
+      "name": "sui-ai-systems",
+      "intent": "Demonstrate useful system behavior under realistic errors rather than shipping a convincing model demo."
+    },
+    {
+      "name": "sui-evidence",
+      "intent": "Resolve the decision with traceable evidence and explicit limitations."
+    },
+    {
+      "name": "sui-maintenance",
+      "intent": "Make the next valuable change safer by building a tested model of the affected code and its consumers."
+    }
+  ],
+  "peerProjectsReviewed": 7,
+  "requiredFiles": {
+    "sui-debugging": [
+      "SKILL.md",
+      "agents/openai.yaml",
+      "assets/icon.svg",
+      "assets/investigation.md",
+      "references/environment-probes.md",
+      "references/field-guide.md"
+    ],
+    "sui-maintenance": [
+      "SKILL.md",
+      "agents/openai.yaml",
+      "assets/change-plan.md",
+      "assets/icon.svg",
+      "references/configuration-and-changes.md",
+      "references/field-guide.md",
+      "references/ownership-and-contributions.md"
+    ],
+    "sui-security": [
+      "SKILL.md",
+      "agents/openai.yaml",
+      "assets/icon.svg",
+      "assets/threat-model.md",
+      "references/ethical-decisions.md",
+      "references/field-guide.md",
+      "references/licenses-and-patents.md",
+      "references/privacy-method.md",
+      "references/schema-validation.md",
+      "references/security-lifecycle.md",
+      "references/validation-tools.md",
+      "scripts/sbom_inventory.py",
+      "scripts/schema_check.py"
+    ],
+    "sui-implementation": [
+      "SKILL.md",
+      "agents/openai.yaml",
+      "assets/configs/clang-tidy.yaml",
+      "assets/configs/mypy.ini",
+      "assets/configs/sonar-project.properties",
+      "assets/configs/tsconfig.checks.json",
+      "assets/icon.svg",
+      "references/field-guide.md",
+      "references/stack-adapters.md",
+      "references/static-analysis.md",
+      "scripts/report_formats.py",
+      "scripts/tool_checks.py"
+    ],
+    "sui-testing": [
+      "SKILL.md",
+      "agents/openai.yaml",
+      "assets/cpp-lab/CMakeLists.txt",
+      "assets/cpp-lab/frame_test.cpp",
+      "assets/icon.svg",
+      "assets/java-lab/FrameTest.java",
+      "assets/matrix.example.json",
+      "assets/python-lab/framed.py",
+      "assets/python-lab/test_framed.py",
+      "assets/test-plan.md",
+      "references/field-guide.md",
+      "references/test-design.md",
+      "references/test-planning.md",
+      "scripts/fuzz_lab.py",
+      "scripts/test_design.py",
+      "scripts/validate_test_matrix.py"
+    ],
+    "sui-review": [
+      "SKILL.md",
+      "agents/openai.yaml",
+      "assets/finding.md",
+      "assets/icon.svg",
+      "references/boundary-review.md",
+      "references/field-guide.md",
+      "references/pr-and-inspections.md"
+    ],
+    "sui-evidence": [
+      "SKILL.md",
+      "agents/openai.yaml",
+      "assets/evidence.example.json",
+      "assets/icon.svg",
+      "references/field-guide.md",
+      "references/quality-measurement.md",
+      "scripts/audit_evidence.py",
+      "scripts/quality_metrics.py"
+    ],
+    "sui-reliability": [
+      "SKILL.md",
+      "agents/openai.yaml",
+      "assets/events.example.json",
+      "assets/icon.svg",
+      "references/experiments.md",
+      "references/field-guide.md",
+      "scripts/load_probe.py",
+      "scripts/slo_report.py"
+    ],
+    "sui": [
+      "SKILL.md",
+      "agents/openai.yaml",
+      "assets/capability-baseline.json",
+      "assets/capability-coverage.json",
+      "assets/eval-baseline-instructions.json",
+      "assets/icon.svg",
+      "assets/native-validation.json",
+      "assets/pack.json",
+      "assets/peer-evaluation.json",
+      "assets/routing-baseline-predictions.json",
+      "assets/routing-candidate-predictions.json",
+      "assets/routing-evals.json",
+      "assets/tool-catalog.json",
+      "assets/validation-deps.txt",
+      "assets/validation.json",
+      "assets/work-state.example.json",
+      "references/capability-coverage.md",
+      "references/peer-patterns.md",
+      "references/research-policy.md",
+      "references/se-field-guide.md",
+      "references/sources.json",
+      "references/workflow.md",
+      "scripts/check_coverage.py",
+      "scripts/evaluate_routes.py",
+      "scripts/file_scope.py",
+      "scripts/inspect_repo.py",
+      "scripts/source_audit.py",
+      "scripts/tests/test_pack_runtime.py",
+      "scripts/tests/test_engineering_tools.py",
+      "scripts/tests/test_helpers.py",
+      "scripts/tests/test_schema_integrity.py",
+      "scripts/tests/test_workflow.py",
+      "scripts/tool_catalog.py",
+      "scripts/validate_pack.py",
+      "scripts/work_state.py"
+    ],
+    "sui-architecture": [
+      "SKILL.md",
+      "agents/openai.yaml",
+      "assets/adr.md",
+      "assets/icon.svg",
+      "references/design-methods.md",
+      "references/field-guide.md"
+    ],
+    "sui-ai-systems": [
+      "SKILL.md",
+      "agents/openai.yaml",
+      "assets/eval.example.json",
+      "assets/icon.svg",
+      "references/field-guide.md",
+      "references/ml-lifecycle.md",
+      "scripts/eval_report.py"
+    ],
+    "sui-discovery": [
+      "SKILL.md",
+      "agents/openai.yaml",
+      "assets/contract.example.json",
+      "assets/icon.svg",
+      "assets/project-plan.example.json",
+      "assets/raci.example.json",
+      "assets/traceability.example.json",
+      "references/field-guide.md",
+      "references/planning.md",
+      "references/requirements.md",
+      "references/team-methods.md",
+      "references/usability.md",
+      "scripts/project_plan.py",
+      "scripts/traceability.py",
+      "scripts/validate_contract.py"
+    ],
+    "sui-delivery": [
+      "SKILL.md",
+      "agents/openai.yaml",
+      "assets/gate.example.json",
+      "assets/icon.svg",
+      "assets/python-ci.yml",
+      "references/build-release.md",
+      "references/completion-evidence.md",
+      "references/field-guide.md",
+      "references/platform-adapters.md",
+      "scripts/file_scope.py",
+      "scripts/run_gate.py",
+      "scripts/verify_evidence.py"
+    ]
+  },
+  "schemaVersion": 2
+}

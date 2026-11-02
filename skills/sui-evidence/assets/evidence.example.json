@@ -1,0 +1,21 @@
+{
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "checkedAt": "2026-10-31",
+      "kind": "standard"
+    }
+  ],
+  "claims": [
+    {
+      "id": "K1",
+      "text": "Retries must respect operation semantics",
+      "sources": [
+        "S1"
+      ],
+      "status": "supported",
+      "applicability": "The API uses HTTP with side effects"
+    }
+  ]
+}

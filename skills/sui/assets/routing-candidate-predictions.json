@@ -1,0 +1,145 @@
+{
+  "variant": "candidate",
+  "predictions": [
+    {
+      "id": "routing-01",
+      "primary": "sui-implementation",
+      "mode": "light"
+    },
+    {
+      "id": "routing-02",
+      "primary": "sui-debugging",
+      "mode": "critical"
+    },
+    {
+      "id": "routing-03",
+      "primary": "sui-review",
+      "mode": "standard"
+    },
+    {
+      "id": "routing-04",
+      "primary": "sui-discovery",
+      "mode": "standard"
+    },
+    {
+      "id": "routing-05",
+      "primary": "sui-architecture",
+      "mode": "standard"
+    },
+    {
+      "id": "routing-06",
+      "primary": "sui-testing",
+      "mode": "standard"
+    },
+    {
+      "id": "routing-07",
+      "primary": "sui-delivery",
+      "mode": "standard"
+    },
+    {
+      "id": "routing-08",
+      "primary": "sui-reliability",
+      "mode": "standard"
+    },
+    {
+      "id": "routing-09",
+      "primary": "sui-security",
+      "mode": "critical"
+    },
+    {
+      "id": "routing-10",
+      "primary": "sui-ai-systems",
+      "mode": "standard"
+    },
+    {
+      "id": "routing-11",
+      "primary": "sui-evidence",
+      "mode": "standard"
+    },
+    {
+      "id": "routing-12",
+      "primary": "sui-maintenance",
+      "mode": "light"
+    },
+    {
+      "id": "routing-13",
+      "primary": "sui-implementation",
+      "mode": "light"
+    },
+    {
+      "id": "routing-14",
+      "primary": "sui-delivery",
+      "mode": "critical"
+    },
+    {
+      "id": "routing-15",
+      "primary": "sui-review",
+      "mode": "critical"
+    },
+    {
+      "id": "routing-16",
+      "primary": "sui-ai-systems",
+      "mode": "standard"
+    },
+    {
+      "id": "routing-17",
+      "primary": "sui-evidence",
+      "mode": "standard"
+    },
+    {
+      "id": "routing-18",
+      "primary": "sui-maintenance",
+      "mode": "critical"
+    },
+    {
+      "id": "routing-19",
+      "primary": "sui-implementation",
+      "mode": "standard"
+    },
+    {
+      "id": "routing-20",
+      "primary": "sui",
+      "mode": "standard"
+    },
+    {
+      "id": "routing-21",
+      "primary": null,
+      "mode": null
+    },
+    {
+      "id": "routing-22",
+      "primary": null,
+      "mode": null
+    },
+    {
+      "id": "routing-23",
+      "primary": null,
+      "mode": null
+    },
+    {
+      "id": "routing-24",
+      "primary": null,
+      "mode": null
+    },
+    {
+      "id": "routing-25",
+      "primary": null,
+      "mode": null
+    },
+    {
+      "id": "routing-26",
+      "primary": null,
+      "mode": null
+    },
+    {
+      "id": "routing-27",
+      "primary": "sui-reliability",
+      "mode": "critical"
+    },
+    {
+      "id": "routing-28",
+      "primary": "sui-testing",
+      "mode": "standard"
+    }
+  ]
+}

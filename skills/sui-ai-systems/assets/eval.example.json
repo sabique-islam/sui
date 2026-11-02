@@ -1,0 +1,20 @@
+{
+  "trials": [
+    {
+      "caseId": "tenant-isolation",
+      "variant": "baseline",
+      "split": "test",
+      "passed": false,
+      "latencyMs": 10,
+      "costUsd": 0.001
+    },
+    {
+      "caseId": "tenant-isolation",
+      "variant": "candidate",
+      "split": "test",
+      "passed": true,
+      "latencyMs": 12,
+      "costUsd": 0.002
+    }
+  ]
+}

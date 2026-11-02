@@ -1,0 +1,228 @@
+{
+  "cases": [
+    {
+      "id": "routing-01",
+      "prompt": "Fix a typo in the checkout button label.",
+      "acceptablePrimary": [
+        "sui-implementation"
+      ],
+      "mode": "light"
+    },
+    {
+      "id": "routing-02",
+      "prompt": "This endpoint sometimes charges twice. Reproduce and fix it.",
+      "acceptablePrimary": [
+        "sui-debugging"
+      ],
+      "mode": "critical"
+    },
+    {
+      "id": "routing-03",
+      "prompt": "Review this diff. Do not edit any files.",
+      "acceptablePrimary": [
+        "sui-review"
+      ],
+      "mode": "standard"
+    },
+    {
+      "id": "routing-04",
+      "prompt": "We need a two-day MVP but do not know which features matter.",
+      "acceptablePrimary": [
+        "sui-discovery"
+      ],
+      "mode": "standard"
+    },
+    {
+      "id": "routing-05",
+      "prompt": "Should our four-person team split this working app into microservices?",
+      "acceptablePrimary": [
+        "sui-architecture"
+      ],
+      "mode": "standard"
+    },
+    {
+      "id": "routing-06",
+      "prompt": "Add property tests for the parser and minimize crash inputs.",
+      "acceptablePrimary": [
+        "sui-testing"
+      ],
+      "mode": "standard"
+    },
+    {
+      "id": "routing-07",
+      "prompt": "Configure a reproducible CI pipeline and a staged rollout.",
+      "acceptablePrimary": [
+        "sui-delivery"
+      ],
+      "mode": "standard"
+    },
+    {
+      "id": "routing-08",
+      "prompt": "p99 latency is timing out despite low average latency.",
+      "acceptablePrimary": [
+        "sui-reliability"
+      ],
+      "mode": "standard"
+    },
+    {
+      "id": "routing-09",
+      "prompt": "Audit whether tenants can read other tenants' files.",
+      "acceptablePrimary": [
+        "sui-security"
+      ],
+      "mode": "critical"
+    },
+    {
+      "id": "routing-10",
+      "prompt": "Evaluate a RAG agent against a deterministic search baseline.",
+      "acceptablePrimary": [
+        "sui-ai-systems"
+      ],
+      "mode": "standard"
+    },
+    {
+      "id": "routing-11",
+      "prompt": "Compare two queue libraries using the versions we actually run.",
+      "acceptablePrimary": [
+        "sui-evidence"
+      ],
+      "mode": "standard"
+    },
+    {
+      "id": "routing-12",
+      "prompt": "Explain this inherited codebase without editing it.",
+      "acceptablePrimary": [
+        "sui-maintenance"
+      ],
+      "mode": "light"
+    },
+    {
+      "id": "routing-13",
+      "prompt": "Rename a private local variable to match this file's style.",
+      "acceptablePrimary": [
+        "sui-implementation"
+      ],
+      "mode": "light"
+    },
+    {
+      "id": "routing-14",
+      "prompt": "Plan a migration that drops customer data from the live database.",
+      "acceptablePrimary": [
+        "sui-delivery"
+      ],
+      "mode": "critical"
+    },
+    {
+      "id": "routing-15",
+      "prompt": "Review a proposed fix to authorization middleware. Review only.",
+      "acceptablePrimary": [
+        "sui-review"
+      ],
+      "mode": "critical"
+    },
+    {
+      "id": "routing-16",
+      "prompt": "Our next prompt version looks better on repeated copies of one easy task. Is that reliable?",
+      "acceptablePrimary": [
+        "sui-ai-systems"
+      ],
+      "mode": "standard"
+    },
+    {
+      "id": "routing-17",
+      "prompt": "Research whether a dependency's claimed benchmark applies to our workload.",
+      "acceptablePrimary": [
+        "sui-evidence"
+      ],
+      "mode": "standard"
+    },
+    {
+      "id": "routing-18",
+      "prompt": "Refactor this public binary library without breaking downstream compiled plugins.",
+      "acceptablePrimary": [
+        "sui-maintenance"
+      ],
+      "mode": "critical"
+    },
+    {
+      "id": "routing-19",
+      "prompt": "Use sui to implement a new search filter in the existing app.",
+      "acceptablePrimary": [
+        "sui-implementation"
+      ],
+      "mode": "standard"
+    },
+    {
+      "id": "routing-20",
+      "prompt": "Use sui to resume our interrupted multi-stage feature from the saved state.",
+      "acceptablePrimary": [
+        "sui"
+      ],
+      "mode": "standard"
+    },
+    {
+      "id": "routing-21",
+      "prompt": "Write a short cold email to a founder.",
+      "acceptablePrimary": [
+        null
+      ],
+      "mode": null
+    },
+    {
+      "id": "routing-22",
+      "prompt": "Generate a PNG mascot for my app.",
+      "acceptablePrimary": [
+        null
+      ],
+      "mode": null
+    },
+    {
+      "id": "routing-23",
+      "prompt": "Give me ten multiple-choice exam questions on testing.",
+      "acceptablePrimary": [
+        null
+      ],
+      "mode": null
+    },
+    {
+      "id": "routing-24",
+      "prompt": "Remind me tomorrow to review the pull request.",
+      "acceptablePrimary": [
+        null
+      ],
+      "mode": null
+    },
+    {
+      "id": "routing-25",
+      "prompt": "What is the weather in Bangalore?",
+      "acceptablePrimary": [
+        null
+      ],
+      "mode": null
+    },
+    {
+      "id": "routing-26",
+      "prompt": "Use bunsamosa to give me a project-defence scorecard.",
+      "acceptablePrimary": [
+        null
+      ],
+      "mode": null
+    },
+    {
+      "id": "routing-27",
+      "prompt": "A production release is failing. Mitigate the incident and investigate reliability.",
+      "acceptablePrimary": [
+        "sui-reliability"
+      ],
+      "mode": "critical"
+    },
+    {
+      "id": "routing-28",
+      "prompt": "Add tests for inclusive min/max limits and malformed input.",
+      "acceptablePrimary": [
+        "sui-testing"
+      ],
+      "mode": "standard"
+    }
+  ]
+}

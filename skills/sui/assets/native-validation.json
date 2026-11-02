@@ -1,0 +1,433 @@
+{
+  "version": "1.2.0",
+  "platform": "Linux native local fixtures",
+  "project": "/workspace/scratch/97bd24b007cf/sui-upgrade/native-runs/trial-picm5t11",
+  "trials": [
+    {
+      "trial": "mypy-clean",
+      "expected": "passed",
+      "observed": {
+        "tool": "mypy",
+        "version": "mypy 2.4.1 (compiled: yes)",
+        "executed": true,
+        "argv": [
+          "/workspace/scratch/97bd24b007cf/sui-deps/bin/mypy",
+          "--show-column-numbers",
+          "--show-error-codes",
+          "--no-error-summary",
+          "--no-pretty",
+          "./app.py"
+        ],
+        "scope": [
+          {
+            "path": "app.py",
+            "sha256": "124ed1d74b8e62cdd96f2ccf72566983336ebc96bd5ba5b9086c06536e9bfd48"
+          }
+        ],
+        "inputBinding": "endpoint-content-equality",
+        "status": "passed",
+        "returnCode": 0,
+        "outputBytes": 0,
+        "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "findings": [],
+        "findingCount": 0,
+        "unparsedLineCount": 0,
+        "partialOutput": false,
+        "limitations": "Declared source files are endpoint-bound; imports, compiler defaults, environment/dependencies and temporary restored mutations are not fully bound. Direct TypeScript mode uses explicit files/strict defaults; use project-native commands when project configuration is required. Messages are suppressed by default."
+      },
+      "oracleMet": true
+    },
+    {
+      "trial": "mypy-faulty",
+      "expected": "findings",
+      "observed": {
+        "tool": "mypy",
+        "version": "mypy 2.4.1 (compiled: yes)",
+        "executed": true,
+        "argv": [
+          "/workspace/scratch/97bd24b007cf/sui-deps/bin/mypy",
+          "--show-column-numbers",
+          "--show-error-codes",
+          "--no-error-summary",
+          "--no-pretty",
+          "./app.py"
+        ],
+        "scope": [
+          {
+            "path": "app.py",
+            "sha256": "25e1b06a842e4dd55d35d685ccc74d9be68628406988dca0a16bdd59421a5ff9"
+          }
+        ],
+        "inputBinding": "endpoint-content-equality",
+        "status": "findings",
+        "returnCode": 1,
+        "outputBytes": 120,
+        "outputSha256": "59b51ba9d355d34e855fbb39dbce4870980af5442d69479bb352d32671782628",
+        "findings": [
+          {
+            "rule": "assignment",
+            "path": "app.py",
+            "line": 1,
+            "level": "error",
+            "suppressed": false,
+            "messageSha256": "d3289d8531b00254f57464fe570c54f76948dab5ad622c997482b7918cdc58f7"
+          }
+        ],
+        "findingCount": 1,
+        "unparsedLineCount": 0,
+        "partialOutput": false,
+        "limitations": "Declared source files are endpoint-bound; imports, compiler defaults, environment/dependencies and temporary restored mutations are not fully bound. Direct TypeScript mode uses explicit files/strict defaults; use project-native commands when project configuration is required. Messages are suppressed by default."
+      },
+      "oracleMet": true
+    },
+    {
+      "trial": "tsc-clean",
+      "expected": "passed",
+      "observed": {
+        "tool": "tsc",
+        "version": "Version 7.0.2",
+        "executed": true,
+        "argv": [
+          "/workspace/scratch/97bd24b007cf/sui-node-deps/node_modules/.bin/tsc",
+          "--noEmit",
+          "--strict",
+          "--pretty",
+          "false",
+          "./app.ts"
+        ],
+        "scope": [
+          {
+            "path": "app.ts",
+            "sha256": "cfa3c70c837d107b3af0cf82d2dd63a63a4a3c6556b156f4d9f5f4b213b66c2b"
+          }
+        ],
+        "inputBinding": "endpoint-content-equality",
+        "status": "passed",
+        "returnCode": 0,
+        "outputBytes": 0,
+        "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "findings": [],
+        "findingCount": 0,
+        "unparsedLineCount": 0,
+        "partialOutput": false,
+        "limitations": "Declared source files are endpoint-bound; imports, compiler defaults, environment/dependencies and temporary restored mutations are not fully bound. Direct TypeScript mode uses explicit files/strict defaults; use project-native commands when project configuration is required. Messages are suppressed by default."
+      },
+      "oracleMet": true
+    },
+    {
+      "trial": "tsc-faulty",
+      "expected": "findings",
+      "observed": {
+        "tool": "tsc",
+        "version": "Version 7.0.2",
+        "executed": true,
+        "argv": [
+          "/workspace/scratch/97bd24b007cf/sui-node-deps/node_modules/.bin/tsc",
+          "--noEmit",
+          "--strict",
+          "--pretty",
+          "false",
+          "./app.ts"
+        ],
+        "scope": [
+          {
+            "path": "app.ts",
+            "sha256": "3975de5062ef9793f3d2e13ee2ef662e26d3acd805b2c1384ecc3b1780511b88"
+          }
+        ],
+        "inputBinding": "endpoint-content-equality",
+        "status": "findings",
+        "returnCode": 1,
+        "outputBytes": 77,
+        "outputSha256": "547419c4320bb688a8254596dd026eb4ece1a5ab5639097944169f13cfdf05a3",
+        "findings": [
+          {
+            "rule": "TS2322",
+            "path": "app.ts",
+            "line": 1,
+            "level": "error",
+            "suppressed": false,
+            "messageSha256": "f456f93ed2b2d8324a617395522ea41ac5f317dc1a886ae23b0c36731a4519fb"
+          }
+        ],
+        "findingCount": 1,
+        "unparsedLineCount": 0,
+        "partialOutput": false,
+        "limitations": "Declared source files are endpoint-bound; imports, compiler defaults, environment/dependencies and temporary restored mutations are not fully bound. Direct TypeScript mode uses explicit files/strict defaults; use project-native commands when project configuration is required. Messages are suppressed by default."
+      },
+      "oracleMet": true
+    },
+    {
+      "trial": "gcc-clean",
+      "expected": "passed",
+      "observed": {
+        "tool": "gcc",
+        "version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+        "executed": true,
+        "argv": [
+          "/usr/bin/gcc",
+          "-fsyntax-only",
+          "-Wall",
+          "-Wextra",
+          "./app.c"
+        ],
+        "scope": [
+          {
+            "path": "app.c",
+            "sha256": "86004d65c4f387c95467c6cee92bc1f1f8cb04d6650be09fbd1e359834a56766"
+          }
+        ],
+        "inputBinding": "endpoint-content-equality",
+        "status": "passed",
+        "returnCode": 0,
+        "outputBytes": 0,
+        "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "findings": [],
+        "findingCount": 0,
+        "unparsedLineCount": 0,
+        "partialOutput": false,
+        "limitations": "Declared source files are endpoint-bound; imports, compiler defaults, environment/dependencies and temporary restored mutations are not fully bound. Direct TypeScript mode uses explicit files/strict defaults; use project-native commands when project configuration is required. Messages are suppressed by default."
+      },
+      "oracleMet": true
+    },
+    {
+      "trial": "gcc-faulty",
+      "expected": "findings",
+      "observed": {
+        "tool": "gcc",
+        "version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+        "executed": true,
+        "argv": [
+          "/usr/bin/gcc",
+          "-fsyntax-only",
+          "-Wall",
+          "-Wextra",
+          "./app.c"
+        ],
+        "scope": [
+          {
+            "path": "app.c",
+            "sha256": "f4d0a444dca9dc8692865af50e2f37a310ecf551957ff0431f53eb37cc3d206c"
+          }
+        ],
+        "inputBinding": "endpoint-content-equality",
+        "status": "findings",
+        "returnCode": 1,
+        "outputBytes": 172,
+        "outputSha256": "9d8262bb7041524df1d8e4271787b2d0a982fa92f313b8ae436a77f38f38c9bd",
+        "findings": [
+          {
+            "rule": "compiler",
+            "path": "./app.c",
+            "line": 1,
+            "level": "error",
+            "suppressed": false,
+            "messageSha256": "7adbe25afa43f5dc5f367a778a5bece2d581bacb0fb334c11dced47bb4c8fd95"
+          }
+        ],
+        "findingCount": 1,
+        "unparsedLineCount": 3,
+        "partialOutput": true,
+        "limitations": "Declared source files are endpoint-bound; imports, compiler defaults, environment/dependencies and temporary restored mutations are not fully bound. Direct TypeScript mode uses explicit files/strict defaults; use project-native commands when project configuration is required. Messages are suppressed by default."
+      },
+      "oracleMet": true
+    },
+    {
+      "trial": "pytest-hypothesis",
+      "versions": {
+        "pytest": "9.2.0",
+        "hypothesis": "6.170.14"
+      },
+      "observed": {
+        "findings": [],
+        "findingCount": 0,
+        "testCount": 6,
+        "executed": 6,
+        "failed": 0,
+        "skipped": 0
+      },
+      "oracleMet": true
+    },
+    {
+      "trial": "python-branch-coverage",
+      "observed": {
+        "findings": [],
+        "findingCount": 0,
+        "coveredStatements": 7,
+        "totalStatements": 8,
+        "coveredBranches": 3,
+        "totalBranches": 4,
+        "files": [
+          "framed.py"
+        ]
+      },
+      "oracleMet": true
+    },
+    {
+      "trial": "gcc-gcov",
+      "observed": {
+        "findings": [],
+        "findingCount": 0,
+        "coveredLines": 2,
+        "totalLines": 2,
+        "coveredBranches": 4,
+        "totalBranches": 4
+      },
+      "oracleMet": true
+    },
+    {
+      "trial": "googletest-1.18.0",
+      "observed": {
+        "findings": [],
+        "findingCount": 0,
+        "testCount": 3,
+        "executed": 3,
+        "failed": 0,
+        "skipped": 0
+      },
+      "oracleMet": true
+    },
+    {
+      "trial": "junit-6.0.1-java17",
+      "observed": {
+        "findings": [],
+        "findingCount": 0,
+        "testCount": 3,
+        "executed": 3,
+        "failed": 0,
+        "skipped": 0
+      },
+      "oracleMet": true
+    },
+    {
+      "trial": "syft-1.55.0-cyclonedx",
+      "observed": {
+        "format": "CycloneDX-1.7",
+        "components": [
+          {
+            "id": "pkg:pypi/idna@3.11?package-id=ace2848e7cfb3ec8",
+            "name": "idna",
+            "version": "3.11",
+            "purl": "pkg:pypi/idna@3.11",
+            "licenses": [
+              "NOASSERTION"
+            ]
+          },
+          {
+            "id": "26ca2b7dc025d550",
+            "name": "/workspace/scratch/97bd24b007cf/sui-upgrade/native-runs/trial-picm5t11/inventory/requirements.txt",
+            "version": null,
+            "purl": null,
+            "licenses": [
+              "NOASSERTION"
+            ]
+          }
+        ],
+        "dependencies": [],
+        "subset": "flat top-level components and dependencies",
+        "limitations": "Inventory normalization only, not full official schema conformance, completeness, authenticity, vulnerability scanning or legal clearance. Preserve the original report and use its exact official schema for full validation."
+      },
+      "oracleMet": true
+    },
+    {
+      "trial": "seeded-fuzz",
+      "observed": {
+        "seed": 10,
+        "iterations": 1000,
+        "accepted": 658,
+        "expectedRejections": 342,
+        "unexpectedFailures": 0,
+        "limitations": "Bounded seeded generation/mutation of a local byte parser. No coverage guidance, native sanitizer or complete input-space assurance is claimed."
+      },
+      "oracleMet": true
+    },
+    {
+      "trial": "bounded-load",
+      "observed": {
+        "status": "passed",
+        "executed": true,
+        "plan": {
+          "host": "127.0.0.1",
+          "port": 41419,
+          "pathSha256": "5d9e24b9d7bf9a8b39fd117d7a421efdc52f1c1f8ae109edf97a3f3f7b52968d",
+          "requests": 20,
+          "concurrency": 2,
+          "timeoutSeconds": 2,
+          "maxP95Ms": 1000,
+          "maxErrorRate": 0,
+          "wallDeadlineSeconds": 60
+        },
+        "sampleCount": 20,
+        "errors": 0,
+        "errorRate": 0.0,
+        "elapsedSeconds": 0.11672047499996552,
+        "throughputPerSecond": 171.34954257173737,
+        "p50Ms": 1.9521320009516785,
+        "p95Ms": 4.896892998658586,
+        "p99Ms": 6.523924999783048,
+        "saturation": "not_collected",
+        "deadlineReached": false,
+        "limitations": "Client-side observations for this bounded workload only. No production capacity, saturation, causality, reliability-over-time or user-population representativeness is inferred. Redirects are not followed and response bodies are not retained."
+      },
+      "oracleMet": true
+    },
+    {
+      "trial": "official-cyclonedx-schema",
+      "observed": {
+        "validBom": {
+          "ok": true,
+          "schemaUri": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+          "errors": [],
+          "errorsTruncated": false,
+          "networkRetrieval": false
+        },
+        "invalidBom": {
+          "ok": false,
+          "schemaUri": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+          "errors": [
+            {
+              "path": [
+                "bomFormat"
+              ],
+              "keyword": "enum"
+            }
+          ],
+          "errorsTruncated": false,
+          "networkRetrieval": false
+        },
+        "schemaCache": {
+          "type": "json",
+          "root": "bom-1.6.schema.json",
+          "files": [
+            {
+              "path": "bom-1.6.schema.json",
+              "uri": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+              "sha256": "3e92dddbc30cf7f6a02b80f0942b1a4cfd4fb1c26f1dfc4310afa9d613cafb93",
+              "source": "https://raw.githubusercontent.com/CycloneDX/specification/1.6/schema/bom-1.6.schema.json"
+            },
+            {
+              "path": "spdx.schema.json",
+              "uri": "http://cyclonedx.org/schema/spdx.schema.json",
+              "sha256": "baa9d3bd1ed57b6751b0887edead6b5063ff53ff7429cf85d476c6c94af0166e",
+              "source": "https://raw.githubusercontent.com/CycloneDX/specification/1.6/schema/spdx.schema.json"
+            },
+            {
+              "path": "jsf-0.82.schema.json",
+              "uri": "http://cyclonedx.org/schema/jsf-0.82.schema.json",
+              "sha256": "8bae002c25e723db7ee1f26afde680ae1a2b1a8f6b4b4b0fd65dc3becb090aae",
+              "source": "https://raw.githubusercontent.com/CycloneDX/specification/1.6/schema/jsf-0.82.schema.json"
+            }
+          ]
+        }
+      },
+      "oracleMet": true
+    }
+  ],
+  "passed": 15,
+  "blocked": 0,
+  "limitations": [
+    "Local synthetic/representative fixtures, not live production or authenticated platform integrations.",
+    "Seeded faulty static fixtures must produce findings; oracleMet does not mean all scans had zero findings.",
+    "No effectiveness benchmark across real user repositories is inferred."
+  ]
+}

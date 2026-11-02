@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "goal": "Add a tenant-safe waitlist to the existing app",
+  "requirements": [
+    "R1"
+  ],
+  "inputs": [
+    "app.py",
+    "test_app.py"
+  ],
+  "decisions": [
+    "Keep registration and waitlist updates in one transaction"
+  ],
+  "tasks": [
+    {
+      "id": "T1",
+      "title": "Implement atomic waitlist membership",
+      "requirements": [
+        "R1"
+      ],
+      "dependsOn": [],
+      "checks": [
+        "C1"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "T2",
+      "title": "Review acceptance and denied paths",
+      "requirements": [
+        "R1"
+      ],
+      "dependsOn": [
+        "T1"
+      ],
+      "checks": [
+        "C1"
+      ],
+      "status": "planned"
+    }
+  ],
+  "checks": [
+    {
+      "id": "C1",
+      "status": "planned"
+    }
+  ],
+  "nextAction": "Inspect registration transaction and existing tests"
+}

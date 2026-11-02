@@ -1,0 +1,23 @@
+{
+  "requirements": [
+    "R1"
+  ],
+  "cases": [
+    {
+      "id": "T1",
+      "requirements": [
+        "R1"
+      ],
+      "risk": "Cross-tenant mutation",
+      "level": "integration",
+      "oracle": "Denied request leaves stored state unchanged",
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "tests.test_tenant"
+      ],
+      "status": "planned"
+    }
+  ]
+}

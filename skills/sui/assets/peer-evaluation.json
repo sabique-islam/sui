@@ -1,0 +1,431 @@
+{
+  "checkedAt": "2026-10-31",
+  "method": "Independent agents read old/current instruction snapshots and the same 28 prompts, without access to gold labels. One pass each. No competing project was executed.",
+  "reports": [
+    {
+      "variant": "baseline",
+      "caseCount": 28,
+      "predictedCount": 28,
+      "primaryAccuracy": 1.0,
+      "modeAccuracy": 0.9642857142857143,
+      "jointAccuracy": 0.9642857142857143,
+      "outOfScopeFalsePositives": 0,
+      "inScopeNullSelections": 0,
+      "missingIds": [],
+      "rows": [
+        {
+          "id": "routing-01",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-02",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-03",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-04",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-05",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-06",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-07",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-08",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-09",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-10",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-11",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-12",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": false,
+          "jointCorrect": false
+        },
+        {
+          "id": "routing-13",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-14",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-15",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-16",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-17",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-18",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-19",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-20",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-21",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-22",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-23",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-24",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-25",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-26",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-27",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-28",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        }
+      ],
+      "limitations": "One labelled routing dataset; not end-to-end SWE performance. Missing cases count as failures; no model calls or significance claims."
+    },
+    {
+      "variant": "candidate",
+      "caseCount": 28,
+      "predictedCount": 28,
+      "primaryAccuracy": 1.0,
+      "modeAccuracy": 1.0,
+      "jointAccuracy": 1.0,
+      "outOfScopeFalsePositives": 0,
+      "inScopeNullSelections": 0,
+      "missingIds": [],
+      "rows": [
+        {
+          "id": "routing-01",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-02",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-03",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-04",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-05",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-06",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-07",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-08",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-09",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-10",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-11",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-12",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-13",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-14",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-15",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-16",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-17",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-18",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-19",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-20",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-21",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-22",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-23",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-24",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-25",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-26",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-27",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        },
+        {
+          "id": "routing-28",
+          "present": true,
+          "primaryCorrect": true,
+          "modeCorrect": true,
+          "jointCorrect": true
+        }
+      ],
+      "limitations": "One labelled routing dataset; not end-to-end SWE performance. Missing cases count as failures; no model calls or significance claims."
+    }
+  ],
+  "limits": [
+    "Gold labels and a small routing sample are not a general SWE benchmark.",
+    "Primary skill selection tied at 28/28; only one work-mode label changed.",
+    "Token and cost metrics unavailable."
+  ]
+}

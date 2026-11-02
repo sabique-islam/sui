@@ -1,0 +1,2506 @@
+{
+  "schemaVersion": 1,
+  "version": "1.2.0",
+  "tools": [
+    {
+      "name": "Accurev",
+      "kind": "configuration management",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "ACM Code of Ethics",
+      "kind": "standard",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Active Collab",
+      "kind": "project/Agile tooling",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "AddressSanitizer",
+      "kind": "runtime sanitizer used with fuzzing",
+      "supportTier": "authorized_lab_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "AFL",
+      "kind": "fuzz",
+      "supportTier": "authorized_lab_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "AFL / AFL++",
+      "kind": "fuzz",
+      "supportTier": "authorized_lab_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Ansible",
+      "kind": "automation/configuration",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Ant",
+      "kind": "build tool",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Apache License",
+      "kind": "license",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Apollo",
+      "kind": "ML system case study",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Asana Intelligence",
+      "kind": "AI project-management example",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Assembly Languages",
+      "kind": "language family",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "AWS",
+      "kind": "cloud infrastructure",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Backlog",
+      "kind": "defect tracker",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Blaze",
+      "kind": "build infrastructure in coverage example",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Bogus patent bounties",
+      "kind": "patent-challenge approach",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "BooFuzz",
+      "kind": "fuzz",
+      "supportTier": "authorized_lab_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "BSD License",
+      "kind": "license",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Bugzilla",
+      "kind": "defect tracker",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "C",
+      "kind": "language",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "C++",
+      "kind": "language",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "C++ Core Guidelines",
+      "kind": "Coding guidelines/check family shown in Clang-Tidy screenshot",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Capistrano",
+      "kind": "deployment",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "CC-BY",
+      "kind": "license",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "CC-BY-ND",
+      "kind": "license",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "CC-BY-SA",
+      "kind": "license",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "CCPA",
+      "kind": "privacy/legal reference; exact label retained",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/privacy-method.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "CGPA",
+      "kind": "privacy/legal reference; exact label retained",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/privacy-method.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Chaos Monkey",
+      "kind": "fault-injection example",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "ChatGPT",
+      "kind": "AI assistance example",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Chef",
+      "kind": "configuration management",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Chrome Developer Tools",
+      "kind": "browser probe/debugging tools",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Clang-Tidy",
+      "kind": "C++ static analyzer explicitly named in embedded IDE screenshot",
+      "supportTier": "supported_report_subset",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Claude",
+      "kind": "AI assistance example",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Clearcase",
+      "kind": "configuration management",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Cobbler",
+      "kind": "infrastructure automation",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "COCOMO",
+      "kind": "historical parametric estimation model",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/planning.md"
+        },
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Contributor Licensing Agreements (CLA)",
+      "kind": "contributor agreement",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "COPPA",
+      "kind": "privacy/legal reference; exact label retained",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/privacy-method.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Coverity",
+      "kind": "Static-analysis product",
+      "supportTier": "supported_report_subset",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Creative Commons (CC)",
+      "kind": "license",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Crowbar",
+      "kind": "infrastructure automation",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "CruiseControl",
+      "kind": "historical CI/continuous builds",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Custom Tools",
+      "kind": "generic tool category",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Cvs",
+      "kind": "version control",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "CycloneDX",
+      "kind": "SBOM interchange standard",
+      "supportTier": "inventory_schema_or_supply_chain_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/build-release.md"
+        },
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Deb",
+      "kind": "package-format/deployment label",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "DeployMaster",
+      "kind": "Windows installer",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Devin",
+      "kind": "historical AI-agent claim/example",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Docker",
+      "kind": "container tooling",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Docker container packaging (optional in source)",
+      "kind": "tool",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Dual License Business Model / MySQL",
+      "kind": "licensing model / case study",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Eclipse",
+      "kind": "IDE logo",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Electronics and communication act (1986)",
+      "kind": "privacy/legal reference; exact label retained",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "End User License Agreement (EULA)",
+      "kind": "license agreement",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Error Prone",
+      "kind": "Java static checker in study image",
+      "supportTier": "supported_report_subset",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "FERPA",
+      "kind": "privacy/legal reference; exact label retained",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/privacy-method.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "FinalBuilder",
+      "kind": "build/release tool",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "find",
+      "kind": "filesystem-search CLI",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "FindBugs",
+      "kind": "Historical Java detector",
+      "supportTier": "supported_report_subset",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "FogBugz",
+      "kind": "defect tracker",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Foreman",
+      "kind": "infrastructure automation",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Freedom of information Act (1966)",
+      "kind": "privacy/legal reference; exact label retained",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Gcov",
+      "kind": "coverage",
+      "supportTier": "supported_report_subset",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "GDPR",
+      "kind": "privacy/legal reference; exact label retained",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/privacy-method.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "GFDL",
+      "kind": "license",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Git",
+      "kind": "version control",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Git distributed version control",
+      "kind": "tool",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "GitHub",
+      "kind": "source hosting/SBOM export platform",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "GitHub Actions",
+      "kind": "CI/SBOM example",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "GitHub Actions CI and CD",
+      "kind": "tool",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "GitHub Copilot",
+      "kind": "AI code-assistance example",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "GitHub repository hosting and GitHub–Jira linkage",
+      "kind": "tool",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/planning.md"
+        },
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "GitHub’s Native SBOM Integration",
+      "kind": "source-host SBOM capability label",
+      "supportTier": "inventory_schema_or_supply_chain_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/build-release.md"
+        },
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Gitlab",
+      "kind": "source/CI platform",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "GNU General Public License",
+      "kind": "license",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "GNU Public License (GPL)",
+      "kind": "license",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "GoogleTest / gtest",
+      "kind": "tool",
+      "supportTier": "supported_report_subset",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "GPL with classpath exception (e.g., Oracle JDK)",
+      "kind": "license",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "grep",
+      "kind": "source-search CLI",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "gRPC/Protocol Buffers",
+      "kind": "RPC protocol/framework and IDL/serialization format",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Harvard’s Human flourishing program",
+      "kind": "research program / ethical framework",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "HIPPA",
+      "kind": "privacy/legal reference; exact label retained",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/privacy-method.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Honggfuzz",
+      "kind": "fuzz",
+      "supportTier": "authorized_lab_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Hudson",
+      "kind": "historical CI",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Hyper-V",
+      "kind": "virtualization",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Hypothesis",
+      "kind": "property-based testing used in fuzzing context",
+      "supportTier": "authorized_lab_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "IEEE 1061",
+      "kind": "standard",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Infer",
+      "kind": "Static analyzer in study image",
+      "supportTier": "supported_report_subset",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "InstallAware",
+      "kind": "Windows installer",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "InstallScript",
+      "kind": "installer scripting technology",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "InstallShield",
+      "kind": "Windows installer",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "IntelliJ IDEA",
+      "kind": "IDE logo",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "ISO 9126",
+      "kind": "standard",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "JaCoCo",
+      "kind": "coverage",
+      "supportTier": "supported_report_subset",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Java",
+      "kind": "language",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Java Checker Framework",
+      "kind": "Java annotation/type-checking framework",
+      "supportTier": "supported_report_subset",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "JavaScript",
+      "kind": "language",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Jenkin Plugins",
+      "kind": "historical CI plugin label",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Jenkins",
+      "kind": "CI/build/deployment",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Jira",
+      "kind": "project-management/issue-tracking tool",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/planning.md"
+        },
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Jira agile planning and bug tracking",
+      "kind": "tool",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/planning.md"
+        },
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "JUnit",
+      "kind": "tool",
+      "supportTier": "supported_report_subset",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Kanboard",
+      "kind": "project/Agile tooling",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Lesser GNU Public License (LGPL)",
+      "kind": "license",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "libFuzzer",
+      "kind": "fuzz",
+      "supportTier": "authorized_lab_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "License on Transfer (LOT)",
+      "kind": "patent-defense network/program",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "LINDDUN Taxonomy of Privacy Threats",
+      "kind": "privacy",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/privacy-method.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Make",
+      "kind": "build tool",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Maven",
+      "kind": "build tool",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Mermaid",
+      "kind": "documentation diagram tool",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Metasploit Framework (Community Edition)",
+      "kind": "security",
+      "supportTier": "authorized_lab_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Microsoft Project",
+      "kind": "scheduling/Gantt tool",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/planning.md"
+        },
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "MIT License",
+      "kind": "license",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "MSI",
+      "kind": "Windows installer package format",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "MyPy / my[py]",
+      "kind": "Python type checker",
+      "supportTier": "native_trial_passed",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Nagios",
+      "kind": "monitoring",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Nmap",
+      "kind": "security",
+      "supportTier": "supported_report_subset",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Node.js event loop; Python requests/asyncio/aiohttp",
+      "kind": "example runtime/libraries",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "OpenAPI/Swagger",
+      "kind": "API specification/tool ecosystem",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "OSS-Fuzz",
+      "kind": "fuzzing infrastructure/project",
+      "supportTier": "authorized_lab_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "OWASP",
+      "kind": "organization / resources",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "OWASP Dependency-Check",
+      "kind": "dependency vulnerability scanner",
+      "supportTier": "inventory_schema_or_supply_chain_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/build-release.md"
+        },
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "OWASP ZAP",
+      "kind": "security",
+      "supportTier": "supported_report_subset",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "PCI DSS",
+      "kind": "standard",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Perforce",
+      "kind": "version/configuration control",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "POSIX file I/O and IPC",
+      "kind": "operating-system API standard",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Privacy Act (1974)",
+      "kind": "privacy/legal reference; exact label retained",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/privacy-method.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Privacy-by-Design (PbD)",
+      "kind": "privacy",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/privacy-method.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Puppet",
+      "kind": "configuration management",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "PyCharm",
+      "kind": "IDE logo",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "PyFuzzer packages",
+      "kind": "fuzz",
+      "supportTier": "authorized_lab_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "pytest",
+      "kind": "tool",
+      "supportTier": "supported_report_subset",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Python",
+      "kind": "language",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "python-afl",
+      "kind": "fuzz",
+      "supportTier": "authorized_lab_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "RACI",
+      "kind": "responsibility-assignment method",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/planning.md"
+        },
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Radamsa",
+      "kind": "fuzz",
+      "supportTier": "authorized_lab_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "RCS",
+      "kind": "historical revision control",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Redis",
+      "kind": "code archaeology case-study system",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "REST/HTTP(S)",
+      "kind": "network API style/protocol",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "RPM",
+      "kind": "package-format/deployment label",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "SaltStack",
+      "kind": "configuration management",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Semantic Versioning",
+      "kind": "versioning specification",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Sensu",
+      "kind": "monitoring",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "shell scripts",
+      "kind": "installation automation example",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Shodan",
+      "kind": "security",
+      "supportTier": "authorized_lab_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Slack",
+      "kind": "collaboration",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "SLOC",
+      "kind": "size-measurement convention",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Snyk",
+      "kind": "Security analysis product family",
+      "supportTier": "supported_report_subset",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "SonarCloud static analysis",
+      "kind": "tool",
+      "supportTier": "supported_report_subset",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "SonarQube",
+      "kind": "Quality/static-analysis platform",
+      "supportTier": "supported_report_subset",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Sora",
+      "kind": "generative video demonstration",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "SPDX",
+      "kind": "SBOM interchange standard",
+      "supportTier": "inventory_schema_or_supply_chain_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/build-release.md"
+        },
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "SpotBugs",
+      "kind": "Pattern-based Java detector",
+      "supportTier": "supported_report_subset",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Spring Framework",
+      "kind": "framework/analysis-limit example",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "SQLMap",
+      "kind": "security",
+      "supportTier": "authorized_lab_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "squale / SQUALE",
+      "kind": "Quality-analysis platform logo",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Subversion",
+      "kind": "version control",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "SVN",
+      "kind": "version control",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "SWID",
+      "kind": "software identification standard",
+      "supportTier": "inventory_schema_or_supply_chain_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/build-release.md"
+        },
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Syft",
+      "kind": "SBOM generator",
+      "supportTier": "inventory_schema_or_supply_chain_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/build-release.md"
+        },
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Synopsys",
+      "kind": "vendor logo",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Syzkaller",
+      "kind": "fuzz",
+      "supportTier": "authorized_lab_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "TeamCity",
+      "kind": "CI",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Templates",
+      "kind": "generated-code/analysis-limit example",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "The Defensive Patent License (DPL)",
+      "kind": "patent licensing mechanism",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "The Open Invention Network (OIN)",
+      "kind": "patent-defense network/program",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "TLS/mTLS",
+      "kind": "secure-transport protocol/authentication mechanism",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Trac Edgewall",
+      "kind": "defect tracker",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Travis CI",
+      "kind": "CI",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Trello",
+      "kind": "project/Agile tooling",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Trivy",
+      "kind": "scanner/SBOM generator",
+      "supportTier": "inventory_schema_or_supply_chain_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/build-release.md"
+        },
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Twitch",
+      "kind": "documentation/screencast example",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "TypeScript",
+      "kind": "Language/type checker example",
+      "supportTier": "native_trial_passed",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "UML",
+      "kind": "modelling notation standard",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Unified Patents",
+      "kind": "patent-defense program",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "US FTC’s Fair Information Practice Principles",
+      "kind": "privacy",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/privacy-method.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Valgrind",
+      "kind": "dynamic memory checker",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Vcentre",
+      "kind": "virtualization management label",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Visual Studio",
+      "kind": "IDE logo",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "WHOIS",
+      "kind": "security",
+      "supportTier": "authorized_lab_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Wireshark",
+      "kind": "security",
+      "supportTier": "authorized_lab_procedure",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "WiseInstaller",
+      "kind": "Windows installer",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Xcode",
+      "kind": "IDE logo",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Yum",
+      "kind": "package/deployment tool label",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "Zabbix",
+      "kind": "monitoring",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "ZAP",
+      "kind": "security",
+      "supportTier": "supported_report_subset",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    },
+    {
+      "name": "zip",
+      "kind": "installation packaging example",
+      "supportTier": "context_or_selection_procedure",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "liveTargetVerified": false,
+      "lookupRule": "Inspect official upstream/installed-version docs and actual project target before configuration; never infer availability or support from a source mention."
+    }
+  ],
+  "notes": [
+    "Source spellings, aliases and examples are retained; entries are not all independent tools.",
+    "Native local trials are recorded separately; no authenticated/live target connection is implied."
+  ]
+}

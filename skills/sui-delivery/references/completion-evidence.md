@@ -1,0 +1,13 @@
+# Evidence tied to current inputs
+
+Add `inputs` to a reviewed gate plan: canonical relative paths for changed code, relevant tests/contracts, manifests/lockfiles and configuration. Use explicit files, not an unbounded directory scan. Include significant expected file deletions as paths as well as existing test/config files. Do not include output reports, checkpoints or credential files in their own input scope.
+
+Run `python3 scripts/run_gate.py PLAN.json --root /project --execute` and capture its JSON in an appropriate project artifact when the workflow needs durable evidence. The gate fingerprints declared inputs before and after running the exact plan, suppresses raw stdout/stderr, and emits inputSnapshot, planSha256, projectRoot, startedAt and finishedAt. Inspect failing command output separately with scoped redaction; the runner does not preserve a debug log.
+
+Then run `python3 scripts/verify_evidence.py REPORT.json --plan PLAN.json --root /project`. The default age window is 24 hours; select a tighter window based on task risk when needed. A match binds only declared files at the capture endpoints and the exact command plan. Persistent source changes, root changes, altered plans, required-check failures, absent input scope, invalid dates or old evidence cause rejection. Reports explicitly declare `inputBinding: endpoint-content-equality`. A temporary change restored before final capture can pass; this helper cannot prove what inputs a process read during execution. Legacy reports lacking the guarantee marker are rejected.
+
+For stronger assurance, run checks in a separately enforced read-only build environment against a captured source artifact, with output/cache directories separated and dependencies/image identity recorded. Use the platform's actual isolation and attestation mechanisms; neither copying files nor comparing hashes alone enforces immutability. Do not claim this local helper provides that assurance.
+
+Unscoped legacy plans can still run but are labelled unbound and cannot pass the evidence verifier. A passing process exit code may still mean zero tests were collected or an irrelevant suite ran; inspect the runner's real summary and original symptom. A test report does not establish successful release or user acceptance.
+
+The verifier checks report consistency, not authenticity or full environment identity. It does not verify omitted files, installed dependencies, mutable services or a fabricated report. Use real build provenance when that assurance is required. POSIX process-group execution and filesystem-scope limitations remain as documented in SKILL.md.

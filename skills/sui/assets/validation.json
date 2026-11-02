@@ -1,0 +1,61 @@
+{
+  "version": "1.2.0",
+  "checkedAt": "2026-11-01",
+  "unitTests": {
+    "passed": 234,
+    "failed": 0,
+    "skipped": 0,
+    "scope": "Existing regressions plus planning/RTM/metrics, pairwise/CFG/fuzz, report formats, scope/failed/empty/malformed runs, schema pinning/reference/dialect/JSON validation, load deadlines and audit-ledger integrity. Extended optional dependencies installed in isolated maintenance environment."
+  },
+  "nativeTrials": {
+    "passed": 15,
+    "blocked": 0,
+    "details": "assets/native-validation.json"
+  },
+  "forwardTrials": [
+    {
+      "task": "Crash-safe draft discovery/planning",
+      "observed": "Six requirements, three use cases, planned acceptance checks and CPM; five structural checks passed, four invalid-plan mutations rejected. Product/source and user acceptance remained unexecuted."
+    },
+    {
+      "task": "Read-only source and SARIF readiness",
+      "observed": "Found typed return-value defect, reproduced a runtime contract failure and rejected failed-invocation SARIF without editing supplied sources."
+    },
+    {
+      "task": "Privacy and dependency rights assessment",
+      "observed": "Applied seven LINDDUN categories and practical controls; preserved two license-review unknowns rather than claiming clearance."
+    }
+  ],
+  "independentReview": {
+    "newFindings": 6,
+    "correctedFindings": 6,
+    "rechecks": "Original report-code/XML/deadline reproductions rejected or handled as appropriate; schema relative-base/nonfinite/referenced-schema controls pass after fixes. Additional bare-$ref and dialect regression cases included."
+  },
+  "priorRuntimeAudit": {
+    "findings": 3,
+    "resolution": "Mandatory manifest inventory; structured malformed/overflow AI metrics; narrowed endpoint-only input-binding guarantee and rejection of legacy ambiguous evidence. No immutable execution claim."
+  },
+  "historicalRoutingEvaluation": {
+    "cases": 28,
+    "independentRuns": 2,
+    "primarySelection": {
+      "baseline": 28,
+      "candidate": 28
+    },
+    "jointSkillAndMode": {
+      "baseline": 27,
+      "candidate": 28
+    },
+    "outOfScopeFalsePositives": {
+      "baseline": 0,
+      "candidate": 0
+    },
+    "limitations": "Single small labelled routing set, one run per version; no global SWE effectiveness or cross-project performance claim."
+  },
+  "limits": [
+    "No production deployment, hosted CI run, live network pentest or authenticated vendor-platform validation was performed.",
+    "Nineteen conditional entries remain procedure-level resources; other entries distinguish native, report-subset, schema and mixed support. They are not all verified live integrations.",
+    "Helper counts/local trials are not a benchmark of SWE effectiveness across real repositories.",
+    "Endpoint file hashes do not detect temporary restored mutations or establish report authenticity."
+  ]
+}

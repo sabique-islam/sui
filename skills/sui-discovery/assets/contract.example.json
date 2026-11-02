@@ -1,0 +1,29 @@
+{
+  "requirements": [
+    {
+      "id": "R1",
+      "behavior": "Only the owner can update a draft",
+      "acceptance": [
+        "Owner update succeeds",
+        "Other-user update is rejected without modifying state"
+      ],
+      "risk": "Unauthorized cross-user modification"
+    }
+  ],
+  "checks": [
+    {
+      "id": "C1",
+      "requirements": [
+        "R1"
+      ],
+      "oracle": "Persisted draft changes only for owner",
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "tests.test_draft_auth"
+      ],
+      "status": "planned"
+    }
+  ]
+}

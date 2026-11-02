@@ -1,0 +1,14 @@
+interface:
+  display_name: Sui
+  short_description: Evidence-backed software engineering assistant
+  default_prompt: Use $sui to inspect this project and complete the engineering task
+    with appropriate evidence and verification.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

@@ -1,0 +1,14 @@
+interface:
+  display_name: Sui Testing
+  short_description: Design tests that detect meaningful regressions
+  default_prompt: Use $sui-testing to complete this task with project-specific evidence
+    and proportionate verification.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

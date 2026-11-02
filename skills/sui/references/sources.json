@@ -1,0 +1,617 @@
+{
+  "retrievedOn": "2026-10-31",
+  "sources": [
+    {
+      "id": "yc-advice",
+      "title": "YC Essential Startup Advice",
+      "url": "https://www.ycombinator.com/blog/ycs-essential-startup-advice",
+      "kind": "startup",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Launch a narrow useful product, learn from users and iterate. This is product discovery advice, not permission to omit safety or integrity."
+    },
+    {
+      "id": "yc-mvp",
+      "title": "How to Plan an MVP",
+      "url": "https://www.youtube.com/watch?v=1hHMwLxN6EM",
+      "kind": "startup",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "YC original lecture; choose a limited initial workflow and feedback loop. The YC library landing page contains no extractable text, so use this original recording."
+    },
+    {
+      "id": "a16z-stack",
+      "title": "Emerging Architectures for LLM Applications",
+      "url": "https://a16z.com/emerging-architectures-for-llm-applications/",
+      "kind": "historical",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "2023 ecosystem analysis. Reuse its separation of data preparation, retrieval, inference and operations; do not reuse old model prices, product rankings or context sizes."
+    },
+    {
+      "id": "google-review",
+      "title": "What to Look for in Code Review",
+      "url": "https://google.github.io/eng-practices/review/reviewer/looking-for.html",
+      "kind": "practice",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Review design, correctness, concurrency, tests and understandability in context. Use evidence for findings rather than style opinions."
+    },
+    {
+      "id": "test-pyramid",
+      "title": "The Practical Test Pyramid",
+      "url": "https://martinfowler.com/articles/practical-test-pyramid.html",
+      "kind": "practice",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Combine fast focused tests with boundary and contract checks; use expensive end-to-end tests for important journeys."
+    },
+    {
+      "id": "monolith-first",
+      "title": "Monolith First",
+      "url": "https://martinfowler.com/bliki/MonolithFirst.html",
+      "kind": "opinion",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "A context-sensitive argument for discovering boundaries before distribution; not a universal ban on services."
+    },
+    {
+      "id": "sre-canary",
+      "title": "Canarying Releases",
+      "url": "https://sre.google/workbook/canarying-releases/",
+      "kind": "practice",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Use a limited representative population, comparable control, release-specific observations and an actual rollback path."
+    },
+    {
+      "id": "sre-alerts",
+      "title": "Alerting on SLOs",
+      "url": "https://sre.google/workbook/alerting-on-slos/",
+      "kind": "practice",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Connect actionable alerts to user-visible reliability and budget consumption rather than arbitrary single thresholds."
+    },
+    {
+      "id": "sre-slos",
+      "title": "Implementing SLOs",
+      "url": "https://sre.google/workbook/implementing-slos/",
+      "kind": "practice",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Define useful service indicators, objectives and agreed error-budget responses around user experience."
+    },
+    {
+      "id": "dora-metrics",
+      "title": "DORA Software Delivery Performance Metrics",
+      "url": "https://dora.dev/guides/dora-metrics/",
+      "kind": "evolving",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "The current retrieved guide has five metrics. Measure at service level and avoid individual quotas or cross-context league tables. Recheck definitions before use."
+    },
+    {
+      "id": "dora-testing",
+      "title": "DORA Test Automation",
+      "url": "https://dora.dev/capabilities/test-automation/",
+      "kind": "practice",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Build fast trustworthy feedback and shared ownership of tests; reducing slow feedback matters more than counting tests."
+    },
+    {
+      "id": "dora-delivery",
+      "title": "DORA Continuous Delivery",
+      "url": "https://dora.dev/capabilities/continuous-delivery/",
+      "kind": "practice",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Maintain the ability to release safely on demand. Continuous delivery and automatic production deployment are distinct."
+    },
+    {
+      "id": "wcag",
+      "title": "WCAG Quick Reference",
+      "url": "https://www.w3.org/WAI/WCAG22/quickref/",
+      "kind": "standard",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Use relevant accessibility success criteria with manual keyboard/focus and assistive-technology checks. Automated scans alone do not establish conformance."
+    },
+    {
+      "id": "anthropic-agents",
+      "title": "Building Effective Agents",
+      "url": "https://www.anthropic.com/research/building-effective-agents",
+      "kind": "evolving",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Use simple composable patterns first; distinguish fixed workflows from model-directed agents and account for cost and latency."
+    },
+    {
+      "id": "anthropic-evals",
+      "title": "Demystifying Evals for AI Agents",
+      "url": "https://www.anthropic.com/research/demystifying-evals-for-ai-agents",
+      "kind": "evolving",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Build realistic tasks and reliable graders; evaluate agent trajectories and outcomes, including repeated trials and failure analysis."
+    },
+    {
+      "id": "owasp-threat",
+      "title": "OWASP Threat Modeling Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html",
+      "kind": "standard",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Model assets, boundaries and threats, select mitigations, then validate them. Threat models evolve with the implementation."
+    },
+    {
+      "id": "owasp-asvs",
+      "title": "OWASP ASVS",
+      "url": "https://asvs.owasp.org/",
+      "kind": "standard",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Select versioned security requirements proportional to application risk; the retrieved site offers ASVS 5.0.0. Recheck exact control IDs."
+    },
+    {
+      "id": "nist-ssdf",
+      "title": "NIST Secure Software Development Framework",
+      "url": "https://csrc.nist.gov/projects/ssdf",
+      "kind": "standard",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Integrate secure development through the lifecycle. Distinguish published final documents and drafts before claiming requirements."
+    },
+    {
+      "id": "aws-retries",
+      "title": "Timeouts, Retries, and Backoff with Jitter",
+      "url": "https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/",
+      "kind": "practice",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Use time budgets and bounded randomized retries; avoid magnifying overload or repeating unsafe side effects."
+    },
+    {
+      "id": "http",
+      "title": "RFC 9110 HTTP Semantics",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "kind": "standard",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Verify method semantics, retry safety, status codes and validators against the protocol rather than framework folklore."
+    },
+    {
+      "id": "postgres-ddl",
+      "title": "PostgreSQL ALTER TABLE",
+      "url": "https://www.postgresql.org/docs/current/sql-altertable.html",
+      "kind": "versioned",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Check lock requirements and validation/rewrite behavior for the deployed database version and exact DDL. Current documentation is not necessarily the project version."
+    },
+    {
+      "id": "otel",
+      "title": "OpenTelemetry Observability Primer",
+      "url": "https://opentelemetry.io/docs/concepts/observability-primer/",
+      "kind": "practice",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Connect signals to system questions; correlate logs, metrics and traces and limit sensitive/high-cardinality data."
+    },
+    {
+      "id": "google-ml",
+      "title": "Google Rules of Machine Learning",
+      "url": "https://developers.google.com/machine-learning/guides/rules-of-ml",
+      "kind": "practice",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Establish a simple baseline and sound data/serving pipeline; detect training-serving skew and optimize system outcomes."
+    },
+    {
+      "id": "linddun",
+      "title": "LINDDUN GO",
+      "url": "https://linddun.org/linddun-go/",
+      "kind": "practice",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Use privacy threat prompts for linking, identifying, detecting, disclosure, awareness and compliance; distinguish privacy from access security."
+    },
+    {
+      "id": "slsa",
+      "title": "SLSA Specification",
+      "url": "https://slsa.dev/spec/",
+      "kind": "standard",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Use provenance and build integrity appropriate to the release. Verify specification version and never infer provenance from a passing scan."
+    },
+    {
+      "id": "spdx",
+      "title": "SPDX Overview",
+      "url": "https://spdx.dev/learn/overview/",
+      "kind": "standard",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Describe components and licensing with a recognized interchange model; an SBOM is inventory, not a security or legal guarantee."
+    },
+    {
+      "id": "semver",
+      "title": "Semantic Versioning",
+      "url": "https://semver.org/",
+      "kind": "standard",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Define the public compatibility contract before applying version increments; version numbers alone do not enforce compatibility."
+    },
+    {
+      "id": "actions-security",
+      "title": "GitHub Actions Secure Use",
+      "url": "https://docs.github.com/en/actions/reference/security/secure-use",
+      "kind": "versioned",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Limit permissions, protect secrets and treat untrusted workflow input/code carefully. Verify action and runner versions."
+    },
+    {
+      "id": "peer-superpowers",
+      "title": "Superpowers verification",
+      "url": "https://raw.githubusercontent.com/obra/superpowers/main/skills/verification-before-completion/SKILL.md",
+      "kind": "evolving",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Completion evidence discipline; Sui independently implements bounded current-input proof, retaining task-sized verification."
+    },
+    {
+      "id": "peer-gsd",
+      "title": "Historical GSD state template",
+      "url": "https://github.com/gsd-build/get-shit-done/blob/main/get-shit-done/templates/state.md",
+      "kind": "historical",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Historical continuity template. The former repository redirects to open-gsd/gsd-core; old command names are not asserted current."
+    },
+    {
+      "id": "peer-spec-kit",
+      "title": "GitHub Spec Kit",
+      "url": "https://raw.githubusercontent.com/github/spec-kit/main/README.md",
+      "kind": "evolving",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Separate workflow entry points and connected specifications, plans and tasks; inspected documentation, not a full project audit."
+    },
+    {
+      "id": "peer-bmad",
+      "title": "BMAD Method",
+      "url": "https://raw.githubusercontent.com/bmad-code-org/BMAD-METHOD/main/README.md",
+      "kind": "evolving",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Task-sized process and durable decisions; reviewed main distinguishes stable and preview, so no current release outcome is inferred."
+    },
+    {
+      "id": "peer-vercel",
+      "title": "Vercel Agent Skills",
+      "url": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/react-best-practices/SKILL.md",
+      "kind": "evolving",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Priority-organized stack-specific guidance; use conditional adapters and independently verified version-specific behavior."
+    },
+    {
+      "id": "peer-trailofbits",
+      "title": "Trail of Bits differential review",
+      "url": "https://raw.githubusercontent.com/trailofbits/skills/main/plugins/differential-review/skills/differential-review/SKILL.md",
+      "kind": "evolving",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Boundary risk and affected-consumer analysis; missing tests are validation gaps rather than automatic vulnerability severity."
+    },
+    {
+      "id": "peer-anthropic",
+      "title": "Anthropic skill creator",
+      "url": "https://raw.githubusercontent.com/anthropics/skills/main/skills/skill-creator/SKILL.md",
+      "kind": "evolving",
+      "checkedAt": "2026-10-31",
+      "status": "retrieved",
+      "applicability": "Baseline/candidate behavioral evaluation and trigger testing. Sui implements its own bounded routing scorer; no upstream code copied."
+    },
+    {
+      "id": "v12-mypy-cli",
+      "title": "mypy cli",
+      "url": "https://mypy.readthedocs.io/en/stable/command_line.html",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-typescript-cli",
+      "title": "typescript cli",
+      "url": "https://www.typescriptlang.org/docs/handbook/compiler-options.html",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-clang-tidy",
+      "title": "clang tidy",
+      "url": "https://clang.llvm.org/extra/clang-tidy/",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-spotbugs-cli",
+      "title": "spotbugs cli",
+      "url": "https://spotbugs.readthedocs.io/en/stable/running.html",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-infer-quickstart",
+      "title": "infer quickstart",
+      "url": "https://fbinfer.com/docs/hello-world/",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-error-prone-install",
+      "title": "error prone install",
+      "url": "https://errorprone.info/docs/installation",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-checker-framework",
+      "title": "checker framework",
+      "url": "https://checkerframework.org/manual/",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-snyk-test",
+      "title": "snyk test",
+      "url": "https://docs.snyk.io/developer-tools/snyk-cli/commands/test",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-snyk-code",
+      "title": "snyk code",
+      "url": "https://docs.snyk.io/developer-tools/snyk-cli/commands/code-test",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-sonar-scanner",
+      "title": "sonar scanner",
+      "url": "https://docs.sonarsource.com/sonarqube-server/analyzing-source-code/scanners/sonarscanner",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-squale-context",
+      "title": "squale context",
+      "url": "https://squale.org/introduction.html",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-coverage-json",
+      "title": "coverage json",
+      "url": "https://coverage.readthedocs.io/en/latest/commands/cmd_json.html",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-pytest-output",
+      "title": "pytest output",
+      "url": "https://docs.pytest.org/en/stable/how-to/output.html",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-hypothesis-start",
+      "title": "hypothesis start",
+      "url": "https://hypothesis.readthedocs.io/en/latest/quickstart.html",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-gcc-gcov",
+      "title": "gcc gcov",
+      "url": "https://gcc.gnu.org/onlinedocs/gcc/Gcov-Data-Files.html",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-jacoco-counters",
+      "title": "jacoco counters",
+      "url": "https://www.jacoco.org/jacoco/trunk/doc/counters.html",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-googletest-advanced",
+      "title": "googletest advanced",
+      "url": "https://google.github.io/googletest/advanced.html",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-linddun-types",
+      "title": "linddun types",
+      "url": "https://linddun.org/threat-types/",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-cyclonedx-overview",
+      "title": "cyclonedx overview",
+      "url": "https://cyclonedx.org/specification/overview/",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-syft-source",
+      "title": "syft source",
+      "url": "https://github.com/anchore/syft",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-trivy-sbom",
+      "title": "trivy sbom",
+      "url": "https://trivy.dev/docs/latest/supply-chain/sbom/",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-dependency-check-cli",
+      "title": "dependency check cli",
+      "url": "https://dependency-check.github.io/DependencyCheck/dependency-check-cli/arguments.html",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-swid-nist",
+      "title": "swid nist",
+      "url": "https://csrc.nist.gov/projects/Software-Identification-SWID",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-libfuzzer",
+      "title": "libfuzzer",
+      "url": "https://llvm.org/docs/LibFuzzer.html",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-afl-docs",
+      "title": "afl docs",
+      "url": "https://aflplus.plus/docs/",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-honggfuzz",
+      "title": "honggfuzz",
+      "url": "https://github.com/google/honggfuzz",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-syzkaller-source",
+      "title": "syzkaller source",
+      "url": "https://github.com/google/syzkaller",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-boofuzz",
+      "title": "boofuzz",
+      "url": "https://boofuzz.readthedocs.io/en/stable/",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-oss-fuzz",
+      "title": "oss fuzz",
+      "url": "https://google.github.io/oss-fuzz/",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-apache-license",
+      "title": "apache license",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-cc-licenses",
+      "title": "cc licenses",
+      "url": "https://creativecommons.org/cc-licenses/",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-llvm-logo",
+      "title": "llvm logo",
+      "url": "https://llvm.org/Logo.html",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Primary upstream reference. Match the installed version, scope and supported output before a live claim. Retrieval alone is not a successful integration."
+    },
+    {
+      "id": "v12-spotbugs-exit-flags",
+      "title": "SpotBugs exit status flags implementation",
+      "url": "https://raw.githubusercontent.com/spotbugs/spotbugs/master/spotbugs/src/main/java/edu/umd/cs/findbugs/ExitCodes.java",
+      "kind": "versioned",
+      "checkedAt": "2026-11-01",
+      "status": "retrieved",
+      "applicability": "Official implementation checked: bug finding flag1, missing class2, analysis error4. Parser rejects error/missing-class completion flags; confirm the actual installed release before integration."
+    }
+  ]
+}

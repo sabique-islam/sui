@@ -1,0 +1,2774 @@
+{
+  "schemaVersion": 1,
+  "version": "1.2.0",
+  "baseline": "Capability audit of 2026-11-01",
+  "counts": {
+    "methodGaps": 121,
+    "conditionalIntegrations": 42
+  },
+  "items": [
+    {
+      "id": "U1.github",
+      "title": "GitHub repository hosting and GitHub–Jira linkage",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "procedure_ready",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/build-release.md"
+        },
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "completionCriterion": "Provide a scoped adapter for repository/PR evidence and an optional explicit Jira linkage; demonstrate it against an authorized project.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "U1.jira",
+      "title": "Jira agile planning and bug tracking",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "procedure_ready",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/build-release.md"
+        },
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "completionCriterion": "Discover available Jira connector, map requirement/acceptance/bug IDs and preserve project fields; demonstrate one authorized workflow with observable resulting issue state.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "U1.actions",
+      "title": "GitHub Actions CI and CD",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "procedure_ready",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/build-release.md"
+        },
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "completionCriterion": "Prepare a project-matched workflow with explicit triggers/permissions/build/test/static analysis/artifacts, and validate the hosted run when authorized.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "U1.docker",
+      "title": "Docker container packaging (optional in source)",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "procedure_ready",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/build-release.md"
+        },
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "completionCriterion": "Add optional project-driven container recipe with reproducible build, bounded runtime configuration and smoke evidence; avoid requiring Docker for projects that do not need it.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "U1.gtest",
+      "title": "GoogleTest / gtest",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "native_trial_passed",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        },
+        {
+          "skill": "sui-implementation",
+          "path": "scripts/report_formats.py"
+        }
+      ],
+      "completionCriterion": "Inspect installed framework/version; provide a minimal meaningful example and exact collection/execution command, with observed test count and failing/passing evidence when used.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration.",
+      "nativeEvidence": [
+        "googletest-1.18.0"
+      ]
+    },
+    {
+      "id": "U1.junit",
+      "title": "JUnit",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "native_trial_passed",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        },
+        {
+          "skill": "sui-implementation",
+          "path": "scripts/report_formats.py"
+        }
+      ],
+      "completionCriterion": "Inspect installed framework/version; provide a minimal meaningful example and exact collection/execution command, with observed test count and failing/passing evidence when used.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration.",
+      "nativeEvidence": [
+        "junit-6.0.1-java17"
+      ]
+    },
+    {
+      "id": "U1.pytest",
+      "title": "pytest",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "native_trial_passed",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        },
+        {
+          "skill": "sui-implementation",
+          "path": "scripts/report_formats.py"
+        }
+      ],
+      "completionCriterion": "Inspect installed framework/version; provide a minimal meaningful example and exact collection/execution command, with observed test count and failing/passing evidence when used.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration.",
+      "nativeEvidence": [
+        "pytest-hypothesis"
+      ]
+    },
+    {
+      "id": "U1.sonarcloud",
+      "title": "SonarCloud static analysis",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "report_adapter_tested",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        },
+        {
+          "skill": "sui-implementation",
+          "path": "scripts/report_formats.py"
+        }
+      ],
+      "completionCriterion": "Support optional SonarCloud configuration and inspect actual analysis/gate output; keep scanner success distinct from correctness.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "U1.lifecycle-choice",
+      "title": "Waterfall, V-model, iterative/incremental and risk-driven spiral selection",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/planning.md"
+        }
+      ],
+      "completionCriterion": "Provide a decision rubric and a worked project mapping that pairs lifecycle artifacts with tests; use spiral loops only when explicit risks justify them.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.product-life",
+      "title": "Product lifecycle from research through support and retirement",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/planning.md"
+        }
+      ],
+      "completionCriterion": "Offer an optional product lifecycle map with customer validation, support ownership, handoffs and retirement triggers appropriate to the project.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.project-life",
+      "title": "Project management lifecycle, planning, control and closure",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/planning.md"
+        }
+      ],
+      "completionCriterion": "Create an optional project plan linking scope, tasks, resources, schedule, risks, monitoring and closure evidence.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.security-sdl",
+      "title": "Security integrated throughout the SDLC",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/security-lifecycle.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        }
+      ],
+      "completionCriterion": "Provide a proportionate secure lifecycle plan linking each consequential risk/control to phase, owner and verification evidence.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.security-training",
+      "title": "Security and privacy baseline training",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/security-lifecycle.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        }
+      ],
+      "completionCriterion": "Provide optional role/asset-driven training objectives, exercises and evidence of understanding; do not assert a course was completed.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.secure-tools",
+      "title": "Approved toolchain and prohibited API policy",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/security-lifecycle.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        }
+      ],
+      "completionCriterion": "Generate project/version-specific safe-tool options and prohibited API rules, enforce them with an appropriate checked tool and record exceptions/ownership.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.security-release",
+      "title": "Final security review and incident servicing plan",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/security-lifecycle.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        }
+      ],
+      "completionCriterion": "Offer a security release review and servicing plan with scope, unresolved issues, escalation contacts/authority, dependency update ownership and evidence-based release decision.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.scrum-framework",
+      "title": "Scrum roles, artifacts, sprint goal and completion discipline",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/team-methods.md"
+        }
+      ],
+      "completionCriterion": "Provide a lightweight role/artifact/event map with sprint goal, backlog refinement and explicit done/acceptance distinctions, tailored to an existing team.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.scrum-plan",
+      "title": "Sprint planning and backlog breakdown",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/team-methods.md"
+        }
+      ],
+      "completionCriterion": "Given prioritized backlog and capacity, prepare a sprint goal and feasible selected stories/tasks with dependencies and acceptance.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.scrum-standup",
+      "title": "Daily standup: progress, next work and blockers",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/team-methods.md"
+        }
+      ],
+      "completionCriterion": "Produce a concise evidence-grounded progress/next/blockers update and assign follow-up for impediments without claiming a meeting occurred.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.scrum-review",
+      "title": "Sprint review and demonstration",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/team-methods.md"
+        }
+      ],
+      "completionCriterion": "Prepare a working increment demo tied to acceptance; capture actual feedback and backlog changes when available.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.scrum-retro",
+      "title": "Sprint retrospective and owned improvement experiment",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/team-methods.md"
+        }
+      ],
+      "completionCriterion": "Facilitate a short evidence-based retrospective yielding one owned measurable process improvement and revisit date.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.scrum-board",
+      "title": "Visual backlog/task board flow",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/team-methods.md"
+        }
+      ],
+      "completionCriterion": "Map project states to an optional board, preserve blocked/deferred work and update only authorized issue/task state.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.invest",
+      "title": "INVEST user stories and acceptance criteria",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/requirements.md"
+        }
+      ],
+      "completionCriterion": "Review a story against each INVEST property, split where needed and produce observable acceptance examples without making INVEST mandatory for trivial changes.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.xp-planning",
+      "title": "XP planning game: release and iteration planning",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/planning.md"
+        }
+      ],
+      "completionCriterion": "Given an ordered backlog, separate a tentative release plan from an iteration commitment and update both with actual learning.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.tdd",
+      "title": "Test-driven development red/green/refactor",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "completionCriterion": "Add optional TDD protocol demonstrating a meaningful failing test, minimal implementation and behavior-preserving refactor with observed evidence.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.pair",
+      "title": "Pair programming pilot/navigator and rotation",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/team-methods.md"
+        }
+      ],
+      "completionCriterion": "Offer optional driver/navigator collaboration with role switch and shared review checkpoints; do not confuse an AI review with human pair programming.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.collective",
+      "title": "Collective code ownership",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/team-methods.md"
+        }
+      ],
+      "completionCriterion": "Define shared contribution boundaries, knowledge transfer and review expectations appropriate to the team.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.onsite",
+      "title": "Onsite customer / domain proxy collaboration",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/team-methods.md"
+        }
+      ],
+      "completionCriterion": "Identify the real domain decision-maker/proxy, decisions they own and how unresolved acceptance questions reach them.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.sustainable",
+      "title": "Sustainable pace and slack",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/planning.md"
+        }
+      ],
+      "completionCriterion": "Offer a capacity plan with explicit slack and reprioritization triggers; do not use individual output quotas.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.lean",
+      "title": "Lean waste, learning, late decisions, fast delivery, empowerment, integrity and whole-system optimization",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/team-methods.md"
+        }
+      ],
+      "completionCriterion": "Provide an optional Lean diagnostic mapping actual delays/waste to one measured end-to-end improvement, avoiding local productivity proxies.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.req-properties",
+      "title": "Individual and set-level requirement quality",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/requirements.md"
+        }
+      ],
+      "completionCriterion": "Supply a review checklist and worked rewrite that distinguishes syntactic validity from semantic quality and records unresolved stakeholder conflicts.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.feasibility",
+      "title": "Feasibility study and alternative evaluation",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/requirements.md"
+        }
+      ],
+      "completionCriterion": "Produce a proportionate feasibility assessment with options, constraints, cost/effort assumptions, risks and a go/no-go rationale.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.elicitation",
+      "title": "Stakeholder identification, elicitation and requirements analysis",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/requirements.md"
+        }
+      ],
+      "completionCriterion": "Select elicitation techniques by stakeholder/system context and preserve observations, conflicts, assumptions and source-to-requirement links.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.ethnography",
+      "title": "Ethnography, situated observation and implicit work practices",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/requirements.md"
+        }
+      ],
+      "completionCriterion": "Provide an optional scoped observation plan and separate observed workarounds/social constraints from interpretation and resulting requirements.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.requirement-types",
+      "title": "Functional, NFR, organizational/external/domain and user/system requirements",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/requirements.md"
+        }
+      ],
+      "completionCriterion": "Classify a small real requirement set, derive testable system behavior from user goals, and identify domain constraints needing current expert/primary evidence.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.security-risk",
+      "title": "Security risk assessment, likelihood/impact and risk ranking",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/security-lifecycle.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        }
+      ],
+      "completionCriterion": "Provide a small evidence/assumption-labelled risk register; include insider threats and never equate trusted doctors or access control with negligible residual risk.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.security-objectives",
+      "title": "SMART security objectives and risk-derived requirements",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/security-lifecycle.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        }
+      ],
+      "completionCriterion": "Derive testable security objectives with scope, measure, owner/milestone and linked risk/control/acceptance; do not infer controls eliminate insider or external risk.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.srs",
+      "title": "Software requirements specification structure and external interfaces",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/requirements.md"
+        }
+      ],
+      "completionCriterion": "Provide a scalable SRS template for tasks that warrant it, with stable IDs, version/baseline and interfaces; label IEEE 830-1998 as historical rather than current authority.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.req-validation",
+      "title": "Requirement review, verification and customer validation",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/requirements.md"
+        }
+      ],
+      "completionCriterion": "Use a semantic review protocol with stakeholder validation evidence, explicit unknowns and model-to-requirement consistency checks.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.fishbone",
+      "title": "Fishbone analysis for requirements/model validation",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/requirements.md"
+        }
+      ],
+      "completionCriterion": "Provide optional cause-category/hypothesis/evidence steps and tie findings to requirement/model review without claiming causal proof from a diagram.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.rtm",
+      "title": "Forward/backward requirements traceability across architecture, design, implementation and test levels",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/requirements.md"
+        }
+      ],
+      "completionCriterion": "Extend an optional trace schema/validator for these artifact types with forward/backward traversal, unknown/dangling/orphan links and impact queries; do not claim semantic coverage from link existence.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.req-change",
+      "title": "Requirement baselines, impact analysis and controlled changes",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/requirements.md"
+        }
+      ],
+      "completionCriterion": "Implement optional change-record schema and impact traversal through RTM, preserving decision history and required project approval rules without inventing routine gates.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.usecase-diagram",
+      "title": "Use-case diagrams: actors, system boundary, functions and associations",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/requirements.md"
+        }
+      ],
+      "completionCriterion": "Supply an optional diagram method with actor goals, system boundary and valid relationships, plus a worked example and review checklist.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.usecase-flow",
+      "title": "Use-case specifications with trigger, preconditions, main, alternate and exception flows",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/requirements.md"
+        }
+      ],
+      "completionCriterion": "Provide a goal/actor/trigger/precondition/postcondition/main-flow template with step-referenced alternatives/exceptions and requirement/test links.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.persona-scenario",
+      "title": "Evidence-grounded personas and user scenarios",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/requirements.md"
+        }
+      ],
+      "completionCriterion": "Provide optional persona/scenario template with evidence/assumptions, goal/context/actions and resulting requirements.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.testcase",
+      "title": "Test case specification, priority, preconditions, data, steps and observed results",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "completionCriterion": "Offer an extended optional case template with those fields while preserving concise automated cases; validate structural completeness and distinguish planned from actually run.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.test-plan",
+      "title": "Test plan scope, quality goals, methodology, responsibilities and deliverables",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "completionCriterion": "Provide a scalable test-plan template and example linking scope/risks/strategy/cases/environment/owners/schedule/entry-exit/suspension/resumption and evidence.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.test-mindset",
+      "title": "Demonstration, preventive, destruction and evaluation testing mindsets",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "completionCriterion": "Use the source categories as optional review prompts and show how preventive/review/adversarial evidence complements happy paths.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.test-environment",
+      "title": "Testbed setup, data, lifecycle and shared resource management",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "procedure_ready",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "assets/python-lab/test_framed.py"
+        }
+      ],
+      "completionCriterion": "Provide an environment manifest/runbook with versions, fixtures, access, setup/cleanup, sharing limits, health checks and known fidelity gaps.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "U1.automation-plan",
+      "title": "Automation strategy, tool selection and script maintenance",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "completionCriterion": "Create optional decision rubric and plan linking automation goals, selected cases, compatible framework/tool, reporting, execution environments and upkeep cost/owner.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.test-contingency",
+      "title": "Test-strategy risks and contingency planning",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "completionCriterion": "Add optional test-risk/trigger/mitigation/contingency/owner fields and demonstrate response to an unavailable test environment.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.test-schedule",
+      "title": "Test work breakdown, estimates, calendar and milestones",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/planning.md"
+        }
+      ],
+      "completionCriterion": "Break down strategy/case/environment/execution/reporting work, estimate with assumptions, calendarize dependencies and identify milestone risk triggers.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.test-resources",
+      "title": "Testing people, skills and infrastructure allocation",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "completionCriterion": "Provide optional resource/skill/infrastructure inventory and adjust a test schedule to actual capacity and availability.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.test-metrics",
+      "title": "Test progress, defect severity and planning/control metrics",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "completionCriterion": "Provide optional test progress aggregation with explicit denominators/statuses/severity, limitations and decisions; avoid developer ranking or simplistic issue/KLOC targets.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U1.security-validation-plan",
+      "title": "Requirements-linked security validation plan",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/security-lifecycle.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        }
+      ],
+      "completionCriterion": "Provide an optional security validation schema/template with these fields and traceability checks, plus a worked plan and blocked/skipped handling; never treat a schema pass as security certification.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U2-02",
+      "title": "Project lifecycle, leadership responsibilities and scope/time/cost tradeoffs",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/planning.md"
+        }
+      ],
+      "completionCriterion": "Provide a proportionate project-plan procedure that records constraints, deliverables, resources/budget, stakeholder responsibilities, review/closure conditions and tradeoff decisions; demonstrate a multi-person example without forcing ceremony on a solo edit.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U2-03",
+      "title": "Agile release/iteration planning, story estimates and velocity",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/planning.md"
+        }
+      ],
+      "completionCriterion": "Use a backlog with historical completed work and availability to select a feasible increment; show revised scope under a deadline and state uncertainty/point limitations. A text workflow and worked example suffice.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U2-05",
+      "title": "Basic COCOMO effort, duration and staffing calculations",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/planning.md"
+        }
+      ],
+      "completionCriterion": "Add a clearly historical basic-COCOMO worked procedure or calculator with mode, KLOC, units, coefficients, E/T and sensitivity; reject invalid values; distinguish model estimate from calibrated project commitment. Do not advertise intermediate/detailed COCOMO merely from names.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U2-06",
+      "title": "Scheduling constraints, durations, milestones and resource feasibility",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/planning.md"
+        }
+      ],
+      "completionCriterion": "Demonstrate a dependency schedule with durations, milestones and resource assumptions; identify an infeasible fixed deadline and revise scope or resources transparently. If automation is claimed, verify calculations against a hand-worked DAG.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U2-08",
+      "title": "RACI responsibility assignment",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/planning.md"
+        }
+      ],
+      "completionCriterion": "Add an optional RACI text/table procedure for coordination: one A and explicit Rs, Cs, Is per activity; show how conflicting or missing accountability is resolved. No bespoke script required.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U2-09",
+      "title": "Project plan, monitoring/control and change communication",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/planning.md"
+        }
+      ],
+      "completionCriterion": "Produce a lean project plan and a review cycle linking observed progress, changed scope/risk/effort, decisions, owners and updated schedule. Keep state declarations separate from verified outcomes.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U2-11",
+      "title": "Gantt charts, critical path/slack and project-tool use",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/planning.md"
+        }
+      ],
+      "completionCriterion": "Given a duration-labelled DAG, compute earliest/latest times, slack and all critical paths and render/update a coherent Gantt chart. A documented use of a project-native tool is sufficient if actual tool capability is observed; distinguish Jira mention from implemented integration.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U2-12",
+      "title": "Team composition, cohesion, knowledge sharing and communication",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/team-methods.md"
+        }
+      ],
+      "completionCriterion": "Offer a small-team coordination procedure with skill/owner/dependency visibility, handover and feedback cadence; demonstrate how it changes for team constraints. Do not claim to improve morale from a template.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U2-26",
+      "title": "Architecture documentation, notation and traceability",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-architecture",
+          "path": "references/design-methods.md"
+        }
+      ],
+      "completionCriterion": "Add a concise documentation procedure selecting views by decision/audience, declaring node/edge meaning and mapping quality constraints to evidence. Provide one readable checked example; avoid a mandatory heavyweight document.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U2-30",
+      "title": "UML component diagrams, interfaces, ports and dependencies",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-architecture",
+          "path": "references/design-methods.md"
+        }
+      ],
+      "completionCriterion": "Add a concise component-model guide with component responsibilities, provided/required interfaces, correctly directed dependencies and notation legend, plus one internally consistent shopping/ATM or project example. Text/vector examples suffice; no special renderer is required.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U2-32",
+      "title": "Seven cohesion categories as design diagnostics",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-architecture",
+          "path": "references/design-methods.md"
+        }
+      ],
+      "completionCriterion": "Add concise distinctions and examples, including input routines, initialization and read/print, then show a justified refactor using responsibility and change pressure rather than ranking labels alone.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U2-33",
+      "title": "Six coupling categories and interface diagnosis",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-architecture",
+          "path": "references/design-methods.md"
+        }
+      ],
+      "completionCriterion": "Add contract-level examples of all six categories, demonstrate why a whole-structure parameter can bind consumers, and propose a compatible boundary reduction. Do not force every design to scalar-only interfaces.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U2-34",
+      "title": "Historical OO methods and structured analysis/DFD",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-architecture",
+          "path": "references/design-methods.md"
+        }
+      ],
+      "completionCriterion": "If practical structured modelling is in scope, add a minimal levelled DFD procedure identifying processes, stores, external entities and balanced flows. Historical method trivia needs no runtime feature.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U2-35",
+      "title": "UML sequence models, alternatives and interactions",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-architecture",
+          "path": "references/design-methods.md"
+        }
+      ],
+      "completionCriterion": "Add a short sequence-modelling guide/example with correct participant order, synchronous/asynchronous/return semantics and relevant alternatives/loops; check against a real use case. Do not count listed class/state diagrams as taught capabilities.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U2-36",
+      "title": "Clear API contracts and REST/OpenAPI/gRPC specifications",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "procedure_ready",
+      "resources": [
+        {
+          "skill": "sui-architecture",
+          "path": "references/design-methods.md"
+        },
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "completionCriterion": "Provide a small validated OpenAPI or protobuf example with inputs/outputs/errors and client/consumer compatibility tests, or documented project-native tooling. Treat protocol performance claims as workload-specific.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "U2-37",
+      "title": "Function/library and IPC contracts",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "procedure_ready",
+      "resources": [
+        {
+          "skill": "sui-architecture",
+          "path": "references/design-methods.md"
+        },
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "completionCriterion": "For a native/IPC task define ownership/lifetime, return/error contract, synchronization, permissions and cleanup; verify an actual caller/callee example. Do not copy the abbreviated source code as production-safe.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "U2-38",
+      "title": "Synchronous/asynchronous API choice and completion semantics",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-architecture",
+          "path": "references/design-methods.md"
+        }
+      ],
+      "completionCriterion": "Add a short choice guide with latency/workload/responsiveness constraints, completion/error/cancellation semantics and an example distinguishing concurrency from nonblocking I/O; test the relevant runtime boundary.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U2-40",
+      "title": "Error taxonomy, propagation and caller recovery",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-architecture",
+          "path": "references/design-methods.md"
+        }
+      ],
+      "completionCriterion": "Add a language-appropriate result/exception/status example and optional shared error registry with stable codes, safe details, propagation, caller action and tests. Preserve existing project conventions rather than requiring one error strategy universally.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U2-41",
+      "title": "Structured logs, severity and request correlation",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-architecture",
+          "path": "references/design-methods.md"
+        }
+      ],
+      "completionCriterion": "Define minimal timestamp/module/error-code/request-ID fields, propagate an ID over a representative flow, test redaction and log a failure at the appropriate boundary without duplication or secrets.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U2-42",
+      "title": "Usability qualities, accessible design, error prevention and undo",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/usability.md"
+        }
+      ],
+      "completionCriterion": "Provide a task-based checklist for learnability, efficiency, satisfaction, errors and memorability, plus keyboard/focus/accessibility and reversible/error-preventing controls; show concrete findings from an actual interface and retest improvements.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U2-43",
+      "title": "Real-user usability tests, task metrics and dogfooding",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/usability.md"
+        }
+      ],
+      "completionCriterion": "Create a concise user-study protocol with target participants, realistic tasks, consent/data handling where applicable, observable outcomes and decision thresholds; distinguish team dogfooding from representative-user evidence; record results honestly.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U2-44",
+      "title": "Usability study methods, A/B tests and prototypes",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/usability.md"
+        }
+      ],
+      "completionCriterion": "Add guidance choosing method by question, participant access, reactivity/cost and qualitative versus causal evidence; give a bounded prototype test and an A/B example with randomization, unit of analysis, metric and uncertainty. No generic statistics engine is required.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U2-48",
+      "title": "Cost of quality: prevention/appraisal/internal/external failures",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "completionCriterion": "Add a small worked cost ledger splitting prevention/appraisal and internal/external failure, stating time window/currency/assumptions and avoiding double counting; connect an improvement decision to uncertainty. A table/text calculation is sufficient.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U2-49",
+      "title": "SQA plan, process audits, deviations and responsibility",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "completionCriterion": "Provide a proportionate SQA-plan/checklist with owners, lifecycle controls, evidence, deviation handling and review cadence; demonstrate an audit finding and follow-up on a concrete project without manufacturing compliance.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U2-53",
+      "title": "Test-driven development red/green/refactor loop",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "completionCriterion": "Add a practical opt-in TDD workflow and one demonstration recording intended failure before code, minimal passing implementation and behavior-preserving refactor with passing tests. State that TDD does not guarantee all paths or requirements are covered.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "u3.ml-pipeline",
+      "title": "Collection/cleaning/labels/features, train/eval splits, model deployment/monitoring/retraining and MLOps",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-ai-systems",
+          "path": "references/ml-lifecycle.md"
+        }
+      ],
+      "completionCriterion": "Add a concise ML pipeline playbook linking data/feature/model versions, validation, training-serving skew, release/rollback, drift and retraining triggers. A reproducible fixture is needed only if claiming executable MLOps support.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "u3.construction-metrics",
+      "title": "Sprint burndown, velocity, throughput and cycle time",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/planning.md"
+        }
+      ],
+      "completionCriterion": "Add a short team-level worked example with denominators, window and scope-change caveat; do not claim story points measure individual productivity or business value. A dashboard adapter is optional.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "u3.construction-quality",
+      "title": "Peer review, unit/test-first, pair programming, stepping, debugging and inspections",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-discovery",
+          "path": "references/team-methods.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        },
+        {
+          "skill": "sui-review",
+          "path": "references/pr-and-inspections.md"
+        }
+      ],
+      "completionCriterion": "Add proportionate decision guidance for pairing, test-first, stepping and inspection. Demonstrate selected method in conversation; automation is unnecessary for pairing or review meetings.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "u3.pr-description",
+      "title": "Reviewable PR titles/descriptions with context, rationale, links and visual evidence",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-review",
+          "path": "references/pr-and-inspections.md"
+        }
+      ],
+      "completionCriterion": "Add concise PR-description guidance or a conditional template with those fields, honoring repository templates and scope; do not require every field for a tiny patch.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "u3.execution-environments",
+      "title": "Local source/binaries, remote server and browser code; white/gray/black-box limits",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-debugging",
+          "path": "references/environment-probes.md"
+        }
+      ],
+      "completionCriterion": "Add a concise environment matrix describing available evidence/edit boundaries and appropriate probes. Implement adapters only for selected environments; never invent source access or execute fetched code by default.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "u3.static-scope",
+      "title": "Static-analysis capabilities, undecidability, conservative approximations, false positives/negatives",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        }
+      ],
+      "completionCriterion": "Add concise selection/triage guidance for lint, pattern, annotation and data-flow analyses with approximation/performance tradeoffs, suppression ownership and a small example. No general static analyzer must be built.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "u3.type-nullness",
+      "title": "Type annotations/nullability, units, dependent annotations and reflection/generated-code limits",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        }
+      ],
+      "completionCriterion": "Add one project-adapted nullness/units contract example and guidance for library stubs/generated code; tool-specific adapters are evaluated separately.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "u3.tool-spotbugs",
+      "title": "SpotBugs support",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "report_adapter_tested",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        },
+        {
+          "skill": "sui-implementation",
+          "path": "scripts/report_formats.py"
+        }
+      ],
+      "completionCriterion": "If SpotBugs support is selected or advertised, add version-aware setup/config, bounded invocation, finding/exit semantics and clean/failing/malformed-output fixtures; otherwise label it external/historical/reference instead of implemented.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "u3.tool-findbugs",
+      "title": "FindBugs support",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "report_adapter_tested",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        },
+        {
+          "skill": "sui-implementation",
+          "path": "scripts/report_formats.py"
+        }
+      ],
+      "completionCriterion": "If FindBugs support is selected or advertised, add version-aware setup/config, bounded invocation, finding/exit semantics and clean/failing/malformed-output fixtures; otherwise label it external/historical/reference instead of implemented.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "u3.tool-mypy",
+      "title": "MyPy / my[py] support",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "native_trial_passed",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        }
+      ],
+      "completionCriterion": "If MyPy / my[py] support is selected or advertised, add version-aware setup/config, bounded invocation, finding/exit semantics and clean/failing/malformed-output fixtures; otherwise label it external/historical/reference instead of implemented.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration.",
+      "nativeEvidence": [
+        "mypy-clean",
+        "mypy-faulty"
+      ]
+    },
+    {
+      "id": "u3.tool-snyk",
+      "title": "Snyk support",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "report_adapter_tested",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        },
+        {
+          "skill": "sui-implementation",
+          "path": "scripts/report_formats.py"
+        }
+      ],
+      "completionCriterion": "If Snyk support is selected or advertised, add version-aware setup/config, bounded invocation, finding/exit semantics and clean/failing/malformed-output fixtures; otherwise label it external/historical/reference instead of implemented.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "u3.tool-sonarqube",
+      "title": "SonarQube support",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "report_adapter_tested",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        },
+        {
+          "skill": "sui-implementation",
+          "path": "scripts/report_formats.py"
+        }
+      ],
+      "completionCriterion": "If SonarQube support is selected or advertised, add version-aware setup/config, bounded invocation, finding/exit semantics and clean/failing/malformed-output fixtures; otherwise label it external/historical/reference instead of implemented.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "u3.tool-coverity",
+      "title": "Coverity support",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "report_adapter_tested",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        },
+        {
+          "skill": "sui-implementation",
+          "path": "scripts/report_formats.py"
+        }
+      ],
+      "completionCriterion": "If Coverity support is selected or advertised, add version-aware setup/config, bounded invocation, finding/exit semantics and clean/failing/malformed-output fixtures; otherwise label it external/historical/reference instead of implemented.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "u3.tool-squale",
+      "title": "squale / SQUALE support",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "procedure_ready",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        }
+      ],
+      "completionCriterion": "If squale / SQUALE support is selected or advertised, add version-aware setup/config, bounded invocation, finding/exit semantics and clean/failing/malformed-output fixtures; otherwise label it external/historical/reference instead of implemented.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "u3.tool-checker-framework",
+      "title": "Java Checker Framework support",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "report_adapter_tested",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        },
+        {
+          "skill": "sui-implementation",
+          "path": "scripts/report_formats.py"
+        }
+      ],
+      "completionCriterion": "If Java Checker Framework support is selected or advertised, add version-aware setup/config, bounded invocation, finding/exit semantics and clean/failing/malformed-output fixtures; otherwise label it external/historical/reference instead of implemented.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "u3.tool-typescript",
+      "title": "TypeScript support",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "native_trial_passed",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        }
+      ],
+      "completionCriterion": "If TypeScript support is selected or advertised, add version-aware setup/config, bounded invocation, finding/exit semantics and clean/failing/malformed-output fixtures; otherwise label it external/historical/reference instead of implemented.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration.",
+      "nativeEvidence": [
+        "tsc-clean",
+        "tsc-faulty"
+      ]
+    },
+    {
+      "id": "u3.tool-error-prone",
+      "title": "Error Prone support",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "report_adapter_tested",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        },
+        {
+          "skill": "sui-implementation",
+          "path": "scripts/report_formats.py"
+        }
+      ],
+      "completionCriterion": "If Error Prone support is selected or advertised, add version-aware setup/config, bounded invocation, finding/exit semantics and clean/failing/malformed-output fixtures; otherwise label it external/historical/reference instead of implemented.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "u3.tool-infer",
+      "title": "Infer support",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "report_adapter_tested",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        },
+        {
+          "skill": "sui-implementation",
+          "path": "scripts/report_formats.py"
+        }
+      ],
+      "completionCriterion": "If Infer support is selected or advertised, add version-aware setup/config, bounded invocation, finding/exit semantics and clean/failing/malformed-output fixtures; otherwise label it external/historical/reference instead of implemented.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "u3.build-dag",
+      "title": "Build tasks/resources/dependencies, incremental work, graph ordering and environment reliability",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/build-release.md"
+        }
+      ],
+      "completionCriterion": "Explain native build-system dependency semantics and demonstrate a small dependency graph/incremental rebuild fixture for a chosen stack if claiming support; do not replace project build tooling.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "u3.devops-culture",
+      "title": "Agile/DevOps relationship; collaboration, theory of mind, affinity, tooling and scaling",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-reliability",
+          "path": "references/experiments.md"
+        },
+        {
+          "skill": "sui-evidence",
+          "path": "references/quality-measurement.md"
+        }
+      ],
+      "completionCriterion": "Add a compact DevOps culture/handoff diagnostic with shared goals, responsibility, feedback friction and tool fit. Correct rigid stereotypes about team sizes, documentation or Agile delivery frequency; no automation required.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "u3.exploratory-experience",
+      "title": "Opportunistic/exploratory, intuition/error guessing, usage-based and domain-based tests",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "completionCriterion": "Add a small conversational exploratory charter: goal/timebox/risks, plausible faults from history/domain/usage, observations and reusable regression cases. No automatic test generator is necessary.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "u3.reliability-definition",
+      "title": "Software reliability as failure-free operation over specified time/environment",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-reliability",
+          "path": "references/experiments.md"
+        },
+        {
+          "skill": "sui-evidence",
+          "path": "references/quality-measurement.md"
+        }
+      ],
+      "completionCriterion": "Add concise distinction among request success, time availability and probability of failure-free mission for a stated environment/duration; never infer them from one another without assumptions.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "u3.release-testing",
+      "title": "Release/system distinction, independent validation and functional/performance/dependability readiness",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "completionCriterion": "Add a conditional release-readiness checklist linking spec/representative journeys, performance/recovery evidence, tester independence where warranted and known omissions; no separate organization is mandatory for a small project.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "u3.user-testing",
+      "title": "Alpha, beta, customer acceptance and representative Agile user participation",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "completionCriterion": "Add a lightweight protocol covering participant/environment, realistic tasks, success/acceptance decision, feedback and representativeness caveat; actual user participation cannot be simulated by Sui.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "u3.cfg-complexity",
+      "title": "CFG construction, edge/node/component formula and independent paths; if/loops and worked graphs",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "completionCriterion": "Add a concise worked CFG with declared blocks/edges/entry/exit/component convention and M formula, including loop/short-circuit/exception limitations. If automated calculation is claimed, add graph validation and fixtures for branch/loops/multiple components; do not use one complexity number as a universal quality label.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "u3.data-flow-testing",
+      "title": "Data-flow criteria and definition/use paths",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "completionCriterion": "Add a concise definition/use example and feasibility/alias caveats with tests tied to a def-use obligation; build an analyzer only if that executable feature is explicitly selected.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "u3.fault-seeding",
+      "title": "Deliberate hidden fault seeding and limits of effectiveness inference",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "completionCriterion": "Add safe-copy-only conversational procedure with seed ground truth, unmodified baseline, detected/undetected distinction and inference limitations; never seed faults in live production.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "u3.scm-goals",
+      "title": "Configuration identification/control/audit/status accounting, planning, roles and proportional timing",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-maintenance",
+          "path": "references/configuration-and-changes.md"
+        }
+      ],
+      "completionCriterion": "Add an optional lightweight SCM plan/register with items, versions/baselines, ownership, change/promotion/release policy, audit/status records and scope-based formality; no CCB ceremony for every local fix.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "u3.branching",
+      "title": "Codelines, branches/merges, GitFlow versus trunk-based, parallel versions/customer/module work",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-maintenance",
+          "path": "references/configuration-and-changes.md"
+        }
+      ],
+      "completionCriterion": "Add concise strategy selection by release cadence, maintained versions/team constraints, then native branch/merge/recovery commands with dirty-tree preservation and conflict verification when selected.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "u3.build-management",
+      "title": "Known-revision build/dependency/test/artifact pipeline, logs and incremental rebuilds",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "procedure_ready",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/build-release.md"
+        },
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "completionCriterion": "Use selected project build system and preserve source/runtime/lockfile/artifact mapping. Add stack-specific recipe/fixtures only for advertised tools; notification sending still needs user authorization.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "u3.installation",
+      "title": "Installers/bootstrapper prerequisites, OS permissions, files/localization/version/license interactions",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/build-release.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        }
+      ],
+      "completionCriterion": "Add optional install-management guidance covering prerequisites, privilege, file/config ownership, localization, upgrade/uninstall/rollback and user-visible smoke; implement product adapters only when selected.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "u3.defect-lifecycle",
+      "title": "Discover/report/validate/analyze/assign/fix/verify/close/release; duplicate/deferred/rejected/reopened states",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-maintenance",
+          "path": "references/configuration-and-changes.md"
+        }
+      ],
+      "completionCriterion": "Add a short project-native defect record/state guidance including reproduction, impact, owner, fix/check/release links, duplicate/deferred/reopen reasoning; configure a tracker only in authorized scope.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "u3.change-management",
+      "title": "Change request, cost/benefit/impact/urgency/users/release cycle, decision and tracking",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-maintenance",
+          "path": "references/configuration-and-changes.md"
+        }
+      ],
+      "completionCriterion": "Add optional compact CR template/method matching existing project convention and actual decision authority; cover consequences of no change, user benefit/count, cost/risk, release timing and verified closure. No automatic CCB needed.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "u3.format-spdx",
+      "title": "SPDX format/schema handling",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "schema_and_inventory_adapter",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/build-release.md"
+        },
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        },
+        {
+          "skill": "sui-security",
+          "path": "scripts/sbom_inventory.py"
+        },
+        {
+          "skill": "sui-security",
+          "path": "scripts/schema_check.py"
+        }
+      ],
+      "completionCriterion": "If SPDX interchange support is claimed, choose schema version and validate a complete generated fixture plus malformed/duplicate/missing-field/relationship cases; otherwise retain explicit reference-only guidance.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "u3.format-cyclonedx",
+      "title": "CycloneDX format/schema handling",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "schema_and_inventory_adapter",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/build-release.md"
+        },
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        },
+        {
+          "skill": "sui-security",
+          "path": "scripts/sbom_inventory.py"
+        },
+        {
+          "skill": "sui-security",
+          "path": "scripts/schema_check.py"
+        }
+      ],
+      "completionCriterion": "If CycloneDX interchange support is claimed, choose schema version and validate a complete generated fixture plus malformed/duplicate/missing-field/relationship cases; otherwise retain explicit reference-only guidance.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration.",
+      "nativeEvidence": [
+        "official-cyclonedx-schema"
+      ]
+    },
+    {
+      "id": "u3.format-swid",
+      "title": "SWID format/schema handling",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "schema_and_inventory_adapter",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/build-release.md"
+        },
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        },
+        {
+          "skill": "sui-security",
+          "path": "scripts/sbom_inventory.py"
+        },
+        {
+          "skill": "sui-security",
+          "path": "scripts/schema_check.py"
+        }
+      ],
+      "completionCriterion": "If SWID interchange support is claimed, choose schema version and validate a complete generated fixture plus malformed/duplicate/missing-field/relationship cases; otherwise retain explicit reference-only guidance.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "u3.tool-syft",
+      "title": "Syft support",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "native_trial_passed",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        }
+      ],
+      "completionCriterion": "For a selected tool add a version-aware artifact/image-scope recipe, generated report/schema validation and clean/failing/error fixtures. Distinguish SBOM generation from vulnerability scanning, advisories from exploitability and source-host export from build generation.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration.",
+      "nativeEvidence": [
+        "syft-1.55.0-cyclonedx"
+      ]
+    },
+    {
+      "id": "u3.tool-trivy",
+      "title": "Trivy support",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "procedure_ready",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        }
+      ],
+      "completionCriterion": "For a selected tool add a version-aware artifact/image-scope recipe, generated report/schema validation and clean/failing/error fixtures. Distinguish SBOM generation from vulnerability scanning, advisories from exploitability and source-host export from build generation.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "u3.tool-dependency-check",
+      "title": "OWASP Dependency-Check support",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "procedure_ready",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        }
+      ],
+      "completionCriterion": "For a selected tool add a version-aware artifact/image-scope recipe, generated report/schema validation and clean/failing/error fixtures. Distinguish SBOM generation from vulnerability scanning, advisories from exploitability and source-host export from build generation.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "u3.tool-github-sbom",
+      "title": "GitHub native SBOM / GitHub Actions SBOM generation support",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "procedure_ready",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        }
+      ],
+      "completionCriterion": "For a selected tool add a version-aware artifact/image-scope recipe, generated report/schema validation and clean/failing/error fixtures. Distinguish SBOM generation from vulnerability scanning, advisories from exploitability and source-host export from build generation.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "u3.devops-tool-families",
+      "title": "Named DevOps infrastructure/configuration/CI/deployment/monitoring/VCS/virtualization tools",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "procedure_ready",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/build-release.md"
+        },
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "completionCriterion": "Preserve each historical tool name and kind in namedTools and clearly distinguish historical mentions from selectable supported integrations. Add native config and tested behavior only for actual selected tools; do not implement every historical product.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "u3.scm-tool-families",
+      "title": "SCM/source-control/build/installer/issue-tool inventory",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "procedure_ready",
+      "resources": [
+        {
+          "skill": "sui-delivery",
+          "path": "references/build-release.md"
+        },
+        {
+          "skill": "sui-delivery",
+          "path": "references/platform-adapters.md"
+        }
+      ],
+      "completionCriterion": "Retain historical labels and clearly mark no integration; build a task-selected integration only with versioned config, observable behavior and relevant fixtures.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "u3.tool-clang-tidy",
+      "title": "Clang-Tidy IDE integration and C++ Core Guidelines checks",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "report_adapter_tested",
+      "resources": [
+        {
+          "skill": "sui-implementation",
+          "path": "references/static-analysis.md"
+        },
+        {
+          "skill": "sui-implementation",
+          "path": "scripts/report_formats.py"
+        }
+      ],
+      "completionCriterion": "When relevant to a C++ project, inspect the installed version and official documentation, configure build context and file scope, and run clean/faulty fixtures with expected diagnostics. Verify unsupported setup, suppression, empty scope and execution failures are visible.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "U4.loc",
+      "title": "SLOC normalization, logical statements and language factors",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-evidence",
+          "path": "references/quality-measurement.md"
+        }
+      ],
+      "completionCriterion": "Provide a language-aware logical/physical LOC measurement recipe or adapter with comments/blank lines/multiline statements fixtures, declared language/version; preserve p24 as historical example rather than universal cross-language conversion factors.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.halstead",
+      "title": "Halstead volume V=N log2(n) with operator/operand vocabulary",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-evidence",
+          "path": "references/quality-measurement.md"
+        }
+      ],
+      "completionCriterion": "Document total N versus distinct n operators/operands, tokenizer assumptions and V=N*log2(n); if automated, validate a known sample plus empty/invalid vocabulary and language-tokenization fixtures.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.cyclomatic",
+      "title": "Cyclomatic complexity and CFG independent paths",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-evidence",
+          "path": "references/quality-measurement.md"
+        }
+      ],
+      "completionCriterion": "Support E-N+2P under explicit graph/component assumptions, a connected n-decisions+1 worked example and CFG fixtures; flag the branch-test-count statement as a source inconsistency rather than implement it.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.ooMetrics",
+      "title": "OO metrics: methods/class, inheritance depth, children, coupling and calls",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-evidence",
+          "path": "references/quality-measurement.md"
+        }
+      ],
+      "completionCriterion": "Add definitions and one worked class graph; declare whether inherited methods, interfaces, external calls and descendants count. Add language adapter fixtures only if automated measurement is claimed.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.testMetricTaxonomy",
+      "title": "Test measurement taxonomy: product size/complexity, defect type/severity, function/statement/decision/condition coverage",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-evidence",
+          "path": "references/quality-measurement.md"
+        }
+      ],
+      "completionCriterion": "Add an explicit taxonomy separating code size/complexity, defect type/severity and execution coverage. If report ingestion is added, fixtures must preserve distinct axes and reject denominator or severity-label ambiguity.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.functionPoints",
+      "title": "Function points: EI, EO, EQ, ILF, EIF, weighting and effort estimate",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-evidence",
+          "path": "references/quality-measurement.md"
+        }
+      ],
+      "completionCriterion": "Add explicit caller-supplied consistent weight table and five category counts/complexity levels, transparent component totals, optional calibrated FP/person-month range, invalid count/table fixtures and a fixture exposing rather than silently reproducing pp36–37 mismatch.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.defectMetrics",
+      "title": "Fault density, module defect share, phase distribution and UAT leakage",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-evidence",
+          "path": "references/quality-measurement.md"
+        }
+      ],
+      "completionCriterion": "Define faults per KLOC or FP separately from module faults/product faults and phase shares; state the exact UAT leakage convention and zero-denominator handling. Add fixtures showing why distinct denominators cannot be substituted.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.mtbf",
+      "title": "MTBF and failure-rate reciprocal assumptions",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-evidence",
+          "path": "references/quality-measurement.md"
+        }
+      ],
+      "completionCriterion": "Document observation/exposure units, repair/failure event policy, censoring and reciprocal-model assumptions; test known intervals and no-failure/no-exposure data if implementing a calculator.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.copyright",
+      "title": "Copyright, public domain, trademarks, source availability and proprietary/EULA rights",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "completionCriterion": "Add a concise concept table for copyright/patent/trademark/public-domain/license/EULA, with source visibility versus actual permissions and jurisdiction caveats; cite exact current primary terms for a live decision, without treating a summary as law.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.ossFragility",
+      "title": "OSS ecosystem dependency fragility and contributor sustainability",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-maintenance",
+          "path": "references/ownership-and-contributions.md"
+        }
+      ],
+      "completionCriterion": "Add a proportionate dependency assessment for ownership, bus factor, support funding, replacement/archival and breakage recovery; one worked dependency scenario suffices.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.ossContributing",
+      "title": "Core/external/supporter/fork roles, CONTRIBUTING and project governance",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-maintenance",
+          "path": "references/ownership-and-contributions.md"
+        }
+      ],
+      "completionCriterion": "Add a brief contribution intake checklist for guidelines, style/static checks, relevant tests/docs, required reviews and contributor terms; identify maintainers/decision rights from the actual project, with no claim that every project has identical governance.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.licenseChoice",
+      "title": "License popularity and choosing a license",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "completionCriterion": "Add a concise goals/compatibility/contributor/business-context checklist linked to exact license texts; do not rank current license suitability from 2021 popularity.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.permissive",
+      "title": "MIT, Apache and BSD notices, warranty, patent/trademark distinctions",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "completionCriterion": "Add exact-version comparison and a worked distribution notice check preserving copyright/license text, applicable NOTICE and modified-file conditions, Apache patent/trademark boundaries, BSD variant differences; use current primary texts for actual decisions.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.cc",
+      "title": "Creative Commons BY, BY-SA, BY-ND and non-code materials",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "completionCriterion": "Add a compact BY/BY-SA/BY-ND rights/conditions mapping and one derivative-material example; check the exact CC version and third-party rights rather than assume all datasets/images are freely reusable.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.dualCompatibilityCla",
+      "title": "Dual licensing, incompatible combinations, OpenOffice/LibreOffice and CLA",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "completionCriterion": "Add examples distinguishing license grant from copyright assignment, inbound/outbound rights and one directional compatibility assessment; use actual license/CLA texts, distribution facts and current commercial terms. Human legal judgment is not replaced by a boolean calculator.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.licenseAutomation",
+      "title": "License/SBOM inventory, policy configuration, report parsing and fixture validation",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "schema_and_inventory_adapter",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        },
+        {
+          "skill": "sui-security",
+          "path": "scripts/sbom_inventory.py"
+        },
+        {
+          "skill": "sui-security",
+          "path": "scripts/schema_check.py"
+        },
+        {
+          "skill": "sui-implementation",
+          "path": "scripts/report_formats.py"
+        }
+      ],
+      "completionCriterion": "For a claimed supported ecosystem add one pinned native tool adapter/configuration, parse normalized component/license provenance and unknowns, test clean/unknown/dual-license/transitive inputs and preserve advisory human review. Do not label the result legal compliance.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "U4.patentBasics",
+      "title": "Patent novelty/usefulness/non-obviousness, disclosure, exclusion versus permission",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "completionCriterion": "Add a brief, qualified concept guide and fact-gathering checklist for inventions/claims/jurisdiction/filing date versus copyright expression; verify primary legal sources for live decisions and route consequential opinions to appropriate expertise.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.patentDefenses",
+      "title": "DPL, OIN, LOT, patent bounties, Unified Patents and reform options",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/licenses-and-patents.md"
+        }
+      ],
+      "completionCriterion": "Add a concise context-scoped comparison and official links for each named mechanism; verify current program terms when selecting an actual option, without asserting guaranteed defense.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.systemProcedure",
+      "title": "System environment, cases, data, execution and defect logs",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "report_adapter_tested",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        },
+        {
+          "skill": "sui-implementation",
+          "path": "scripts/report_formats.py"
+        }
+      ],
+      "completionCriterion": "Add a worked project-native system test setup with deterministic data/teardown and a report adapter recording collection/assertions/failures; fixture empty/failed/malformed reports. Keep defect logs free of sensitive data.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "U4.performanceLoadStress",
+      "title": "Performance, scalability, load and stress with representative use",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "procedure_ready",
+      "resources": [
+        {
+          "skill": "sui-reliability",
+          "path": "references/experiments.md"
+        },
+        {
+          "skill": "sui-evidence",
+          "path": "references/quality-measurement.md"
+        }
+      ],
+      "completionCriterion": "Add one project-specific harness with expected-load versus beyond-design stress profiles, thresholds, abort/cleanup and p50/p95/p99/error/saturation output; validate representative and overload fixture reports without unauthorized production traffic.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration.",
+      "nativeEvidence": [
+        "bounded-load"
+      ]
+    },
+    {
+      "id": "U4.installation",
+      "title": "Installation/uninstallation and acceptance installation environments",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "completionCriterion": "Add a platform-specific installation/upgrade/removal checklist and one representative fixture/test plan, checking expected retained/deleted data; no uncontrolled removal of user data.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.cloudLocalizationCompliance",
+      "title": "Cloud environment, localization/cultural target and compliance test types",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "completionCriterion": "Add scoped examples for locale/timezone/formatting/text layout, cloud-specific boundaries and requirement-to-versioned-control checks. Do not claim full legal compliance from test labels.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.startupShutdown",
+      "title": "Deterministic startup and shutdown cleanup/state consistency",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "completionCriterion": "Add one stateful-service lifecycle test covering readiness, clean stop, interrupted stop/restart, stale lock policy and persisted invariants; ensure teardown is bounded.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.acceptanceTypes",
+      "title": "Acceptance/qualification, installation, alpha/beta and performance acceptance",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "completionCriterion": "Add a short acceptance plan example connecting business oracles to qualification, target installation, in-house alpha, external beta and applicable performance acceptance; record participants/environment/exit criteria, without mandatory ceremonies for all projects.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.integrationStrategies",
+      "title": "Big-bang/incremental/top-down/bottom-up/sandwich integration",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-planning.md"
+        },
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "completionCriterion": "Document each strategy with dependency availability, stub/driver needs and diagnosis tradeoffs; demonstrate a skeleton/sandwich example. Flag source terminology inconsistency and avoid most-bugs/most-agile universal claims.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.pentestMethod",
+      "title": "Pentest scope, white/gray/black-box, recon/scanning/assessment/exploit/report",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "completionCriterion": "Provide a bounded authorized lab example with rules of engagement, selected knowledge model, recon-to-report evidence chain, severity/impact/false-positive review and remediation retest; never infer legal compliance from scan completion.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.pentestReconTools",
+      "title": "WHOIS and Shodan reconnaissance references",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "procedure_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "completionCriterion": "Document legitimate scope and public-data interpretation; if integration is claimed, add one read-only authorized-target adapter with saved response fixtures and missing/ambiguous-data behavior.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "U4.pentestNamedTools",
+      "title": "Nmap, Metasploit, OWASP ZAP/ZAP, SQLMap and Wireshark",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "mixed_integration_support",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        },
+        {
+          "skill": "sui-implementation",
+          "path": "scripts/report_formats.py"
+        }
+      ],
+      "completionCriterion": "Provide scope/version/prerequisite and selection guidance for all five distinct tools; claim operational support only for adapters actually implemented with sanitized saved reports, invalid/empty/failed-run fixtures and clear authorization boundaries. Do not execute exploitation merely to close this coverage gap.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "U4.fuzzMethod",
+      "title": "Mutation/generation, white/gray/black-box fuzzers, sanitizer monitor and feedback loop",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "completionCriterion": "Add one runnable local parser target with seed corpus and explicit properties/sanitizers/time/resource budget; capture/replay/minimize crashes and add regression fixture. Explain taxonomy without treating random mutation as the only fuzzing method.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null,
+      "nativeEvidence": [
+        "seeded-fuzz"
+      ]
+    },
+    {
+      "id": "U4.fuzzAflLib",
+      "title": "AFL/AFL++, libFuzzer, AddressSanitizer and OSS-Fuzz",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "procedure_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "completionCriterion": "Supply concise selection/prerequisite guide; for claimed operational support include one appropriate pinned harness/configuration, artifact replay and sanitizer/crash/timeout fixtures. Distinguish fuzz engine, memory-error detector and hosted service.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "U4.fuzzOtherNative",
+      "title": "Honggfuzz, Syzkaller and Radamsa",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "procedure_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "completionCriterion": "Add accurate versioned selection notes for all three; operational claims require tool-appropriate local setup and saved crash/result fixtures, with kernel isolation for Syzkaller rather than ordinary project test execution.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "U4.fuzzPython",
+      "title": "Hypothesis, BooFuzz, python-afl and PyFuzzer packages",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "procedure_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/validation-tools.md"
+        }
+      ],
+      "completionCriterion": "Resolve exact packages/versions, distinguish Hypothesis property testing from protocol/coverage fuzzers, provide a local Hypothesis property/shrinking example and a scoped network-protocol example only if claimed; test replay and failure fixtures without probing external services.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration."
+    },
+    {
+      "id": "U4.fairInformation",
+      "title": "Collection/use limitation and FTC notice, choice, access, integrity, enforcement",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/privacy-method.md"
+        }
+      ],
+      "completionCriterion": "Map notice/awareness, choice/consent, access/participation, integrity/security and enforcement to product controls and an owner; verify exact laws/jurisdiction/version only when applicable, flag source typos rather than propagate them.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.linddun",
+      "title": "Seven LINDDUN privacy threats and project mitigation exercise",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/privacy-method.md"
+        }
+      ],
+      "completionCriterion": "Add all seven LINDDUN categories (linking, identifying, non-repudiation, detecting, disclosure, unawareness/unintervenability, non-compliance) with one concrete threat, mitigation and verification per applicable data flow; distinguish accepted/unapplicable threats. No code is required to make the human threat analysis usable.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.coveragePipeline",
+      "title": "Instrumentation, build integration, automation, visualization and analytics at Google",
+      "baselineDisposition": "conditional_integration",
+      "resolutionTier": "report_adapter_tested",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        },
+        {
+          "skill": "sui-implementation",
+          "path": "scripts/report_formats.py"
+        }
+      ],
+      "completionCriterion": "Provide a versioned project-native coverage setup for at least one relevant stack, generate and parse real statement/branch output, bind it to test/source scope and add empty/malformed/failed-run report fixtures. Preserve Gcov/JaCoCo/Blaze as named example technologies rather than mandate Google infrastructure.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": "No external target/account was supplied; verify installed tool/version/config and authorized project output before claiming a live integration.",
+      "nativeEvidence": [
+        "python-branch-coverage",
+        "gcc-gcov"
+      ]
+    },
+    {
+      "id": "U4.coverageWorkedCfg",
+      "title": "avgAbs CFG, aligned statements and condition/decision test sets",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-testing",
+          "path": "references/test-design.md"
+        }
+      ],
+      "completionCriterion": "Add the exact null/empty/mixed-negative-positive example with graph/obligations and explicit short-circuit evaluation. Verify each expected statement/decision/condition outcome with fixtures, distinguishing not-evaluated from false; do not infer MC/DC, path coverage or universal minimality from the example.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.ethicsCases",
+      "title": "VW, Therac-25, Uber, Instagram, Twitter and algorithmic harms",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/ethical-decisions.md"
+        }
+      ],
+      "completionCriterion": "Add a worked case asking who is harmed, what evidence is missing, what to pause/report/remediate and how to monitor affected groups; distinguish historical claims from ethical reasoning. Human judgment and escalation need practical guidance, not an automatic verdict.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.accessibilityDarkPatterns",
+      "title": "Dominos accessibility and airline family-seating incentives",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/ethical-decisions.md"
+        }
+      ],
+      "completionCriterion": "Add a brief harmful-incentive/design choice example covering vulnerable users, transparency and alternatives; apply project-appropriate accessibility checks without pretending an old legal case establishes present jurisdictional duties.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.ethicsPractice",
+      "title": "Ethics discourse, ACM commitments and limits of codes",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/ethical-decisions.md"
+        }
+      ],
+      "completionCriterion": "Add a concise stakeholder/consequence/options/accountability review mapped to the named ACM commitments, with uncertainty and actionable escalation. Do not claim a checkbox or code citation guarantees ethical outcomes.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.llmIpConfidentiality",
+      "title": "LLM training provenance, output ownership and sensitive inputs",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/ethical-decisions.md"
+        }
+      ],
+      "completionCriterion": "Add a bounded provenance/terms/input-confidentiality checklist and one provider-independent example, with verified current primary terms for actual decisions and unknown rights explicitly marked; avoid blanket ownership or legality conclusions.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    },
+    {
+      "id": "U4.humanFlourishing",
+      "title": "Five flourishing domains, three ethical questions and predictive-attendance exercise",
+      "baselineDisposition": "gap",
+      "resolutionTier": "method_ready",
+      "resources": [
+        {
+          "skill": "sui-security",
+          "path": "references/ethical-decisions.md"
+        }
+      ],
+      "completionCriterion": "Add the three review questions (respect humanity; amplify positive/negative behavior; quality impact on others) and one predictive-attendance example assessing the five domains, consent/privacy/fairness, alternatives and residual uncertainty. No executable ethical score is required.",
+      "validation": "See assets/validation.json for actual runs; a resource link or structural pass is not semantic/live-target proof.",
+      "externalValidation": null
+    }
+  ],
+  "limitations": [
+    "Per-unit audit entries overlap; counts are not independent defects or a coverage percentage.",
+    "Method resources were implemented; tool tiers distinguish procedures, fixture parsing, local trials and live target validation.",
+    "No universal claim that every named legacy/proprietary platform is installed or connected."
+  ]
+}

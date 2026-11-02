@@ -1,0 +1,21 @@
+{
+  "assignments": [
+    {
+      "task": "restore-draft",
+      "people": {
+        "engineer": [
+          "R"
+        ],
+        "product-owner": [
+          "A"
+        ],
+        "support": [
+          "C"
+        ],
+        "release-owner": [
+          "I"
+        ]
+      }
+    }
+  ]
+}
